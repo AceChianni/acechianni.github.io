@@ -190,7 +190,7 @@ h1, h2, h3 {
 
 .secondary-cta:hover {
   background: var(--blue-primary);
-  color: #a04949;
+  color: #0664bb;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(27, 42, 255, 0.2);
 }
@@ -199,6 +199,33 @@ h1, h2, h3 {
   outline: 2px solid var(--blue-dark);
   outline-offset: 3px;
 }
+
+/* soft sheen highlight */
+.hero-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0% 0%, rgba(255,255,255,0.45), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.hero-cta:hover::before {
+  opacity: 1;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(27, 42, 255, 0.35);
+}
+
+/* focus state for accessibility */
+.hero-cta:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+
 
 /* =====================================================
    NAV BUTTON STYLE BOOST (LinkedIn Icon)
