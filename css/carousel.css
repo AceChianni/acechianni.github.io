@@ -1,145 +1,83 @@
 /* =====================================================
-   CAROUSEL STYLES — Ace Chianni Portfolio
-   ===================================================== */
+   CAROUSEL STYLES — HOMEPAGE HERO
+===================================================== */
 
-/* Carousel container */
-.carousel {
-  max-width: 960px;
-  margin: 3.5rem auto;
-  border-radius: 1.2rem;
+#carouselNav {
+  max-width: 1100px;
+  margin: 2rem auto 3rem;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
   position: relative;
 }
 
-/* Carousel images */
-.carousel img {
+/* Images */
+#carouselNav .carousel-item img {
   width: 100%;
   height: 520px;
   object-fit: cover;
-  filter: saturate(1.05) contrast(1.03);
 }
 
-/* Caption container (glass morphism) */
-.carousel-caption {
-  background: rgba(60, 90, 180, 0.38);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+/* Glass caption */
+#carouselNav .carousel-caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 85%;
+  max-width: 800px;
+
+  background: rgba(45, 85, 160, 0.55);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 1.8rem;
+
   border-radius: 16px;
-  padding: 1.3rem 1.6rem;
-  font-family: 'Inter', sans-serif;
-  color: #f8fbff;
-  line-height: 1.6;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
-  transition: all 0.4s ease;
-}
-
-/* Subtle hover lift */
-.carousel-caption:hover {
-  background: rgba(60, 90, 180, 0.5);
-  transform: translateY(-4px);
-}
-
-/* Caption title */
-.carousel-caption h5 {
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 0.4rem;
+  text-align: center;
 }
 
 /* Caption text */
-.carousel-caption p {
-  font-weight: 400;
-  font-size: 1rem;
-  color: #eaf3ff;
-}
-
-/* Smooth fade effect */
-.carousel-item {
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-/* Arrow icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%) brightness(110%);
-}
-
-/* =====================================================
-   PAUSE / PLAY BUTTONS — refined
-   ===================================================== */
-.carousel-controls {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-/* Shared button style */
-#pauseCarousel,
-#playCarousel {
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  border: 2px solid #5A7BBF;
-  padding: 0.45rem 1.2rem;
-  border-radius: 20px;
-  margin: 0 0.5rem;
-  font-size: 0.9rem;
-  transition: all 0.25s ease;
-}
-
-/* Default */
-#pauseCarousel {
-  background: #ffffff;
-  color: #5A7BBF;
-}
-
-#playCarousel {
-  background: #5A7BBF;
+#carouselNav .carousel-caption h5 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
   color: #ffffff;
 }
 
-/* Active state */
-#pauseCarousel.active,
-#playCarousel.active {
-  background: linear-gradient(135deg, #5A7BBF, #8FA7E5);
-  color: white;
-  box-shadow: 0 4px 12px rgba(90, 123, 191, 0.4);
+#carouselNav .carousel-caption p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f6ff;
 }
 
-/* Hover */
-#pauseCarousel:hover,
-#playCarousel:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(90, 123, 191, 0.35);
+/* Navigation Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
 }
 
-/* =====================================================
-   MOBILE OPTIMIZATION
-   ===================================================== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Pause / Play controls */
+.carousel-controls {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .carousel img {
-    height: 340px;
+  #carouselNav .carousel-item img {
+    height: 320px;
   }
 
-  .carousel-caption {
-    font-size: 0.92rem;
+  #carouselNav .carousel-caption {
+    width: 90%;
     padding: 1rem;
-    background: rgba(60, 90, 180, 0.6);
   }
 
-  .carousel-caption h5 {
-    font-size: 1.6rem;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  .carousel img {
-    height: 260px;
-  }
-
-  .carousel-caption {
-    padding: 0.8rem;
+  #carouselNav .carousel-caption h5 {
+    font-size: 1.5rem;
   }
 }

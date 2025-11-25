@@ -1,116 +1,141 @@
-/* =====================================================
-   GLOBAL STYLES — Ace Chianni Portfolio
-   Uses color variables from colors.css
-   ===================================================== */
-
-@import url('colors.css');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300;400;600&display=swap');
-
-/* -----------------------------------------------------
-   BASE LAYOUT
------------------------------------------------------ */
+/* ================================
+   GLOBAL RESET
+================================ */
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
-  color: var(--text-main);
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-main);
 }
 
-/* -----------------------------------------------------
+/* Prevent navbar gap */
+body {
+  padding-top: 90px;
+}
+
+/* ================================
    HEADINGS
------------------------------------------------------ */
+================================ */
 h1, h2, h3 {
   font-family: 'Caveat', cursive;
   color: var(--blue-dark);
   text-align: center;
-  margin-top: 2rem;
-  line-height: 1.3;
 }
 
-/* -----------------------------------------------------
-    NAVBAR 
------------------------------------------------------ */
-
+/* ================================
+   NAVBAR + GLASS
+================================ */
 .navbar-custom {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1000;
-
-  background: rgba(27, 42, 255, 0.651);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.9rem 1.2rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-
-  transition: background 0.35s ease;
+  z-index: 9999;
+  background: rgba(27, 42, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 0.7rem 1.2rem;
 }
 
+/* Brand */
 .navbar-custom .navbar-brand {
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-/* ---------------------------
-   NAV LINKS
---------------------------- */
-
+/* NAV LINKS */
 .navbar-custom .nav-link {
+  color: #eaf3ff;
+  margin: 0 12px;
   position: relative;
-  margin: 0 14px;
-  padding-bottom: 6px;
-
-  font-weight: 500;
-  font-size: 1rem;
-  color: #e8f4ff;
-
-  transition: color 0.3s ease;
 }
 
-.navbar-custom .nav-link:hover {
-  color: #ffffff;
-}
-
-/* underline line */
+/* Hover underline */
 .navbar-custom .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
-
-  height: 2px;
+  bottom: -5px;
   width: 0%;
-  background: linear-gradient(
-    90deg,
-    #ffffff,
-    #cdeaff
-  );
-  transition: width 0.35s ease;
-  border-radius: 2px;
+  height: 2px;
+  background: linear-gradient(90deg, #fff, #cdeaff);
+  transition: .3s ease;
 }
 
-/* Hover effect */
-.navbar-custom .nav-link:hover::after {
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
   width: 100%;
 }
 
-/* ✅ ACTIVE TAB */
+/* ACTIVE STATE */
 .navbar-custom .nav-link.active {
-  color: #ffffff;
-  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.4);
 }
 
-.navbar-custom .nav-link.active::after {
-  width: 100% !important;
+
+
+/* ================================
+   CAROUSEL
+================================ */
+.carousel {
+  width: 90%;
+  max-width: 950px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
 }
-.navbar-custom .nav-link.active {
-  color: #ffffff;
-  text-shadow: 0 0 6px rgba(255,255,255,0.4);
+
+/* Correct centering */
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Overlay captions */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+/* Caption text */
+.carousel-caption h5 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Navigation arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.85;
+}
+
+/* Button styling */
+.carousel-controls button {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .carousel img {
+    height: 300px;
+  }
 }
 
 
