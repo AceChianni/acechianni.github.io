@@ -1,7 +1,7 @@
 /* =====================================================
    GLOBAL RESET & FOUNDATION
 ===================================================== */
-@import url('colors.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300;400;600&display=swap');
 
 * {
@@ -330,6 +330,16 @@ h1, h2, h3 {
   font-weight: 500;
 }
 
+.home-focus {
+  margin: 3rem auto;
+  max-width: 700px;
+}
+
+.focus-line {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.03em;
+}
 
 /* =====================================================
    FOOTER

@@ -1,44 +1,39 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
-// ============================
-// LOAD NAVBAR + ACTIVE STATE
-// ============================
-const navbarPlaceholder = document.getElementById("navbar-placeholder");
 
-if (navbarPlaceholder) {
-  fetch("navbar.html")
-    .then(res => res.text())
-    .then(html => {
-      navbarPlaceholder.innerHTML = html;
+  /* =====================================================
+     LOAD NAVBAR + ACTIVE STATE
+  ===================================================== */
+  const navbarPlaceholder = document.getElementById("navbar-placeholder");
 
-      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  if (navbarPlaceholder) {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(html => {
+        navbarPlaceholder.innerHTML = html;
 
-      document.querySelectorAll(".nav-link").forEach(link => {
-        const linkHref = link.getAttribute("href");
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
 
-        if (linkHref === currentPage) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    })
-    .catch(err => console.error("Navbar load failed:", err));
-}
+        document.querySelectorAll(".nav-link").forEach(link => {
+          const href = link.getAttribute("href");
+          link.classList.toggle("active", href === currentPage);
+        });
+      })
+      .catch(err => console.error("Navbar load failed:", err));
+  }
 
-// ============================
-// LOAD FOOTER
-// ============================
-const footerPlaceholder = document.getElementById("footer-placeholder");
+  /* =====================================================
+     LOAD FOOTER
+  ===================================================== */
+  const footerPlaceholder = document.getElementById("footer-placeholder");
 
-if (footerPlaceholder) {
-  fetch("footer.html")
-    .then(res => res.text())
-    .then(html => {
-      footerPlaceholder.innerHTML = html;
-    })
-    .catch(err => console.error("Footer load failed:", err));
-}
+  if (footerPlaceholder) {
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => (footerPlaceholder.innerHTML = html))
+      .catch(err => console.error("Footer load failed:", err));
+  }
 
   /* =====================================================
      FADE-IN ANIMATION ON SCROLL
@@ -46,7 +41,7 @@ if (footerPlaceholder) {
   const fadeSections = document.querySelectorAll(".fade-section, .timeline-item");
 
   function revealOnScroll() {
-    fadeSections.forEach((section) => {
+    fadeSections.forEach(section => {
       const rect = section.getBoundingClientRect();
       if (rect.top < window.innerHeight - 100) {
         section.classList.add("visible");
@@ -58,14 +53,14 @@ if (footerPlaceholder) {
   revealOnScroll();
 
   /* =====================================================
-     HERO CAROUSEL PLAY/PAUSE
+     HERO CAROUSEL PLAY / PAUSE
   ===================================================== */
-  const carouselElement = document.querySelector("#carouselNav");
+  const heroCarouselEl = document.querySelector("#carouselNav");
   const pauseBtn = document.querySelector("#pauseCarousel");
   const playBtn = document.querySelector("#playCarousel");
 
-  if (carouselElement && pauseBtn && playBtn && window.bootstrap) {
-    const heroCarousel = new bootstrap.Carousel(carouselElement, {
+  if (heroCarouselEl && pauseBtn && playBtn && window.bootstrap) {
+    const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {
       interval: 4000,
     });
 
@@ -83,13 +78,13 @@ if (footerPlaceholder) {
   }
 
   /* =====================================================
-     LIGHTBOX FOR PHOTOSHOP / ART
+     LIGHTBOX FOR ART / PHOTOSHOP
   ===================================================== */
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
 
   if (lightbox && lightboxImg) {
-    document.querySelectorAll(".case-image img, .thumb-img").forEach((img) => {
+    document.querySelectorAll(".case-image img, .thumb-img").forEach(img => {
       img.style.cursor = "zoom-in";
       img.addEventListener("click", () => {
         lightboxImg.src = img.src;
@@ -104,16 +99,15 @@ if (footerPlaceholder) {
   }
 
   /* =====================================================
-     WEB PROJECT CASE STUDY MODAL + CAROUSEL
+     WEB PROJECT CASE STUDIES (UX + CAROUSEL)
   ===================================================== */
   const projectModal = document.getElementById("project-modal");
   const modalTitle = document.getElementById("modal-title");
   const modalDescription = document.getElementById("modal-description");
   const modalMeta = document.getElementById("modal-meta");
-  const slideCaption = document.getElementById("slide-caption");
-  const modalClose = projectModal ? projectModal.querySelector(".modal-close") : null;
+  const modalClose = projectModal?.querySelector(".modal-close");
 
-  const carouselElementProjects = document.getElementById("projectCarousel");
+  const carouselEl = document.getElementById("projectCarousel");
   const carouselInner = document.getElementById("project-carousel-inner");
   const indicators = document.getElementById("project-carousel-indicators");
 
@@ -122,193 +116,222 @@ if (footerPlaceholder) {
     modalTitle &&
     modalDescription &&
     modalMeta &&
-    slideCaption &&
-    carouselElementProjects &&
+    carouselEl &&
     carouselInner &&
     indicators
   ) {
+
+    /* =====================
+       PROJECT DATA
+    ===================== */
     const projects = {
+      inkspression: {
+        title: "Inkspression",
+        overview:
+          "A neurodivergent-friendly journaling and reflection platform designed to support emotional regulation without overwhelm.",
+        meta:
+          "Role: UX/UI Designer & Front-End Developer · Stack: React, Tailwind, Firebase",
+        slides: [
+          {
+            src: "images/inkspression/dashboard.jpg",
+            heading: "Dashboard",
+            caption: "Gentle overview of mood, prompts, and recent entries."
+          },
+          {
+            src: "images/inkspression/theme.jpg",
+            heading: "Theme Selection",
+            caption: "Sensory-friendly themes designed for comfort and clarity."
+          },
+          {
+            src: "images/inkspression/entry.jpg",
+            heading: "Entry Screen",
+            caption: "Focused writing environment for expressive journaling."
+          }
+        ],
+        caseStudy: {
+          problem:
+            "Many journaling and productivity tools rely on rigid prompts, dense dashboards, or gamified pressure that increases anxiety instead of reducing it.",
+          goals: [
+            "Reduce cognitive load during reflection",
+            "Support emotional safety and self-paced use",
+            "Ensure accessibility across themes and layouts"
+          ],
+          decisions: [
+            "Low-density layouts with generous spacing to minimize overwhelm",
+            "Theme customization to support different emotional states",
+            "Avoidance of streaks or punitive language"
+          ],
+          reflection:
+            "Inkspression reinforced the importance of emotional context in UX. Future iterations would include usability testing with neurodivergent users."
+        }
+      },
+
+      inkspresso: {
+        title: "Inkspresso — Fuel Your Imagination",
+        overview:
+          "A cozy café-inspired eCommerce and digital library experience designed for mindful browsing.",
+        meta:
+          "Role: UX/UI Designer & Full-Stack Developer · Stack: Node.js, Express, MongoDB",
+        slides: [
+          {
+            src: "images/inkspresso/dashboard.png",
+            heading: "Dashboard",
+            caption: "Central hub connecting café and library experiences."
+          },
+          {
+            src: "images/inkspresso/home.png",
+            heading: "Café Menu",
+            caption: "Warm, low-pressure browsing of drinks and treats."
+          },
+          {
+            src: "images/inkspresso/library.png",
+            heading: "Library View",
+            caption: "Exploration-focused book discovery experience."
+          }
+        ],
+        caseStudy: {
+          problem:
+            "Many eCommerce platforms overwhelm users with aggressive CTAs and dense layouts, making browsing feel transactional.",
+          goals: [
+            "Create a calm, inviting browsing experience",
+            "Separate exploration from purchase decisions",
+            "Support long-form discovery"
+          ],
+          decisions: [
+            "Separated café and library modes to reduce decision pressure",
+            "Dark-mode-first design for extended sessions",
+            "Clear hierarchy prioritizing exploration over conversion"
+          ],
+          reflection:
+            "This project strengthened my approach to calm commerce UX and information architecture."
+        }
+      },
+
       anniime: {
         title: "AnniiMe Finder",
         overview:
-          "An anime discovery experience designed to gently onboard new viewers through a short quiz, curated recommendations, and mood-based navigation.",
+          "A guided anime discovery platform that helps new viewers navigate a vast catalog without decision fatigue.",
         meta:
           "Role: Product Designer & Front-End Developer · Stack: React, JavaScript, Jikan API",
         slides: [
           {
             src: "images/anniime/home-light.jpg",
             heading: "Landing — Light Mode",
-            caption:
-              "A welcoming, low-stimulation entry point to reduce decision fatigue.",
-          },
-          {
-            src: "images/anniime/home-dark.jpg",
-            heading: "Landing — Dark Mode",
-            caption:
-              "Optimized contrast and legibility for nighttime browsing.",
-          },
-          {
-            src: "images/anniime/search-light.jpg",
-            heading: "Search Results — Light Mode",
-            caption:
-              "Key metadata surfaced to help new viewers choose with confidence.",
-          },
-          {
-            src: "images/anniime/search-dark.jpg",
-            heading: "Search Results — Dark Mode",
-            caption: "Parallel layout optimized for dark viewing environments.",
+            caption: "Low-stimulation entry point for new users."
           },
           {
             src: "images/anniime/quiz-dark.jpg",
             heading: "Onboarding Quiz",
-            caption:
-              "Guides users through tone, vibe, and pacing to recommend matching anime.",
+            caption: "Mood-based quiz guiding discovery."
           },
+          {
+            src: "images/anniime/search-dark.jpg",
+            heading: "Results View",
+            caption: "Digestible recommendation grouping."
+          }
         ],
-      },
-
-      inkspresso: {
-        title: "Inkspresso — Fuel Your Imagination",
-        overview:
-          "A cozy café-inspired full-stack eCommerce and book exploration experience.",
-        meta:
-          "Role: UX/UI Designer & Full-Stack Developer · Stack: Node.js, Express, MongoDB",
-        slides: [
-          {
-            src: "images/inkspresso/dashboard.png",
-            heading: "Dashboard Overview",
-            caption:
-              "Central hub connecting library, café menu, and curated recommendations.",
-          },
-          {
-            src: "images/inkspresso/home.png",
-            heading: "Café Menu",
-            caption: "Coffee-shop inspired browsing of drinks & treats.",
-          },
-          {
-            src: "images/inkspresso/library.png",
-            heading: "Library View",
-            caption: "Explore books, filter genres, and save favorite reads.",
-          },
-        ],
-      },
-
-      inkspression: {
-        title: "Inkspression",
-        overview:
-          "A neurodivergent-friendly journaling and self-reflection platform.",
-        meta:
-          "Role: Product Designer & Front-End Developer · Stack: React, Tailwind, Firebase",
-        slides: [
-          {
-            src: "images/inkspression/dashboard.jpg",
-            heading: "Dashboard",
-            caption: "Gentle overview of mood, prompts, and recent entries.",
-          },
-          {
-            src: "images/inkspression/theme.jpg",
-            heading: "Theme Selection",
-            caption:
-              "Sensory-friendly interface themes designed for comfort & clarity.",
-          },
-          {
-            src: "images/inkspression/entry.jpg",
-            heading: "Entry Screen",
-            caption: "A focused writing space for expressive journaling.",
-          },
-        ],
-      },
+        caseStudy: {
+          problem:
+            "New anime viewers often feel overwhelmed by large catalogs and complex genre systems.",
+          goals: [
+            "Reduce decision fatigue",
+            "Guide discovery through preference",
+            "Make recommendations approachable"
+          ],
+          decisions: [
+            "Quiz-based onboarding instead of open search",
+            "Clear grouping of recommendations",
+            "Consistent layouts across themes"
+          ],
+          reflection:
+            "AnniiMe Finder highlighted the value of guided discovery for first-time users."
+        }
+      }
     };
 
-    /* -----------------------------
-       VIEW CASE STUDY BUTTONS
-    ----------------------------- */
-    document.querySelectorAll(".btn-web[data-project]").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
+    /* =====================
+       OPEN CASE STUDY
+    ===================== */
+    document.querySelectorAll(".btn-web[data-project]").forEach(btn => {
+      btn.addEventListener("click", e => {
         e.preventDefault();
-        const key = btn.dataset.project;
-        const project = projects[key];
+
+        const project = projects[btn.dataset.project];
         if (!project) return;
 
         modalTitle.textContent = project.title;
-        modalDescription.textContent = project.overview;
         modalMeta.textContent = project.meta;
+
+        modalDescription.innerHTML = `
+          <h4>Overview</h4>
+          <p>${project.overview}</p>
+
+          <h4>Problem</h4>
+          <p>${project.caseStudy.problem}</p>
+
+          <h4>UX Goals</h4>
+          <ul>${project.caseStudy.goals.map(g => `<li>${g}</li>`).join("")}</ul>
+
+          <h4>Key UX Decisions</h4>
+          <ul>${project.caseStudy.decisions.map(d => `<li>${d}</li>`).join("")}</ul>
+
+          <h4>Reflection</h4>
+          <p>${project.caseStudy.reflection}</p>
+
+          <p class="small text-muted mt-3">
+            Design iterations were explored directly in high-fidelity UI and code,
+            allowing continuous refinement without separate wireframes.
+          </p>
+        `;
 
         carouselInner.innerHTML = "";
         indicators.innerHTML = "";
 
-        project.slides.forEach((slide, index) => {
-          const item = document.createElement("div");
-          item.className = "carousel-item" + (index === 0 ? " active" : "");
-          item.innerHTML = `
-            <img src="${slide.src}" class="d-block w-100 modal-slide-img" alt="${slide.heading}">
-            <div class="carousel-caption d-md-block">
-              <h5>${slide.heading}</h5>
-              <p>${slide.caption}</p>
+        project.slides.forEach((slide, i) => {
+          carouselInner.insertAdjacentHTML(
+            "beforeend",
+            `
+            <div class="carousel-item ${i === 0 ? "active" : ""}">
+              <img src="${slide.src}" class="d-block w-100 modal-slide-img" alt="${slide.heading}">
+              <div class="carousel-caption">
+                <h5>${slide.heading}</h5>
+                <p>${slide.caption}</p>
+              </div>
             </div>
-          `;
-          carouselInner.appendChild(item);
+          `
+          );
 
-          const indicator = document.createElement("button");
-          indicator.type = "button";
-          indicator.dataset.bsTarget = "#projectCarousel";
-          indicator.dataset.bsSlideTo = index;
-          if (index === 0) indicator.classList.add("active");
-          indicators.appendChild(indicator);
+          indicators.insertAdjacentHTML(
+            "beforeend",
+            `<button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="${i}" class="${i === 0 ? "active" : ""}"></button>`
+          );
         });
 
-        let projCarousel = bootstrap.Carousel.getInstance(carouselElementProjects);
-        if (projCarousel) {
-          projCarousel.to(0);
-        } else {
-          projCarousel = new bootstrap.Carousel(carouselElementProjects, {
-            interval: false,
-            ride: false,
-            keyboard: true,
-          });
-        }
-
-        slideCaption.textContent = project.slides[0].caption;
-
-        carouselElementProjects.addEventListener("slid.bs.carousel", (ev) => {
-          slideCaption.textContent = project.slides[ev.to].caption;
-        });
-
+        new bootstrap.Carousel(carouselEl, { interval: false });
         projectModal.classList.add("active");
         projectModal.setAttribute("aria-hidden", "false");
         document.body.style.overflow = "hidden";
-
-        setTimeout(() => {
-          carouselElementProjects.setAttribute("tabindex", "0");
-          carouselElementProjects.focus();
-        }, 50);
       });
     });
 
-    /* -----------------------------
-       MODAL CLOSE
-    ----------------------------- */
-    if (modalClose) {
-      modalClose.addEventListener("click", () => {
-        projectModal.classList.remove("active");
-        projectModal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-      });
-    }
+    /* =====================
+       CLOSE MODAL
+    ===================== */
+    const closeModal = () => {
+      projectModal.classList.remove("active");
+      projectModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    };
 
-    projectModal.addEventListener("click", (e) => {
-      if (e.target === projectModal) {
-        projectModal.classList.remove("active");
-        projectModal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-      }
+    modalClose?.addEventListener("click", closeModal);
+
+    projectModal.addEventListener("click", e => {
+      if (e.target === projectModal) closeModal();
     });
 
-    document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", e => {
       if (e.key === "Escape" && projectModal.classList.contains("active")) {
-        projectModal.classList.remove("active");
-        projectModal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
+        closeModal();
       }
     });
   }
