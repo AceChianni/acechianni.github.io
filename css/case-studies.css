@@ -1,44 +1,57 @@
 /* ==========================================================
-   CASE STUDIES — Portfolio Projects
-   ========================================================== */
+   CASE STUDIES 
+========================================================== */
+
+
+/* ==========================================================
+   1) GRID LAYOUT
+========================================================== */
 
 .case-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
-  margin: 2rem auto;
+
   max-width: 1200px;
+  margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
-/* ----------------------------------------------------------
-   CARD STRUCTURE
----------------------------------------------------------- */
+
+/* ==========================================================
+   2) CASE CARD
+========================================================== */
+
 .case-card {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
   display: flex;
   flex-direction: column;
-  height: auto;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .case-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
 }
 
-/* ----------------------------------------------------------
-   IMAGE SECTION (Dynamic Interactive Display)
----------------------------------------------------------- */
+
+/* ==========================================================
+   3) IMAGE AREA + TAG
+========================================================== */
+
 .case-image {
   position: relative;
-  overflow: hidden;
   aspect-ratio: 16 / 10;
+  overflow: hidden;
+
   border-radius: 0.75rem 0.75rem 0 0;
   background: linear-gradient(145deg, #dce3ff, #f4f6ff);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,19 +61,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
   transform: scale(1);
   transition: transform 1.2s ease, filter 0.8s ease;
   border-radius: inherit;
 }
 
+/* soft dark overlay on hover to boost contrast */
 .case-image::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.3) 100%);
   opacity: 0;
-  transition: opacity 0.6s ease;
   pointer-events: none;
+  transition: opacity 0.6s ease;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.30) 100%
+  );
 }
 
 .case-card:hover .case-image img {
@@ -72,36 +92,39 @@
   opacity: 1;
 }
 
-/* Category Tag */
 .case-tag {
   position: absolute;
   top: 14px;
   left: 14px;
+
   background: rgba(90, 123, 191, 0.9);
   color: #fff;
+
   font-size: 0.8rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+
   padding: 0.35rem 0.8rem;
   border-radius: 0.6rem;
   backdrop-filter: blur(5px);
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
 }
 
-/* ----------------------------------------------------------
-   CONTENT
----------------------------------------------------------- */
+
+/* ==========================================================
+   4) TEXT CONTENT
+========================================================== */
+
 .case-content {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: auto;
 }
 
 .case-content h3 {
+  font-family: "Caveat", cursive;
   color: var(--blue-dark);
-  font-family: 'Caveat', cursive;
+
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
@@ -115,16 +138,20 @@
 
 .case-meta {
   margin-top: 0.8rem;
-  font-size: 0.85rem;
-  color: #555;
+
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+
+  font-size: 0.85rem;
+  color: #555;
 }
 
-/* ----------------------------------------------------------
-   INLINE MINI-GALLERY
----------------------------------------------------------- */
+
+/* ==========================================================
+   5) MINI GALLERY (Thumbs inside a case card)
+========================================================== */
+
 .case-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -135,8 +162,10 @@
 .case-gallery .thumb-img {
   width: calc(50% - 0.5rem);
   border-radius: 8px;
+
   object-fit: contain;
   cursor: pointer;
+
   transition: transform 0.4s ease;
 }
 
@@ -144,54 +173,51 @@
   transform: scale(1.05);
 }
 
-/* ----------------------------------------------------------
-   FADE-IN EFFECT
----------------------------------------------------------- */
-.fade-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
 
-.fade-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+/* ==========================================================
+   6) LIGHTBOX (Expanded Image Overlay)
+========================================================== */
 
-/* ----------------------------------------------------------
-   LIGHTBOX (Image Popup)
----------------------------------------------------------- */
 .lightbox {
   display: none;
   position: fixed;
   inset: 0;
+
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
+
   justify-content: center;
   align-items: center;
-  z-index: 999;
-}
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 85vh;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  padding: 1rem;
 }
 
 .lightbox.active {
   display: flex;
-  animation: fadeIn 0.4s ease;
+  animation: lightboxFadeIn 0.4s ease;
 }
 
-@keyframes fadeIn {
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+
+  object-fit: contain;
+  border-radius: 12px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes lightboxFadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
-/* ----------------------------------------------------------
-   RESPONSIVE
----------------------------------------------------------- */
+
+/* ==========================================================
+   7) RESPONSIVE
+========================================================== */
+
 @media (max-width: 768px) {
   .case-grid {
     grid-template-columns: 1fr;

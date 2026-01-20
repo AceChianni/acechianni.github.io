@@ -2,153 +2,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- =====================================================
+       0) DOCUMENT META
+  ====================================================== -->
   <meta charset="UTF-8" />
-  <title>Ace Chianni | UX/UI Designer for Wellness & Human-Centered Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Ace Chianni | UX/UI Designer for Wellness &amp; Human-Centered Products</title>
+
   <!-- SEO -->
-  <meta name="description"
-    content="Ace Chianni is a multidisciplinary designer blending UX/UI, art, psychology, and wellness into emotionally resonant digital experiences."/>
-  <meta name="keywords"
-    content="UX Designer, UI Designer, Creative Technologist, Wellness Design, Portfolio, Ace Chianni"/>
+  <meta
+    name="description"
+    content="Ace Chianni is a multidisciplinary designer blending UX/UI, art, psychology, and wellness into emotionally resonant digital experiences."
+  />
+  <meta
+    name="keywords"
+    content="UX Designer, UI Designer, Product Designer, Creative Technologist, Wellness Design, Portfolio, Ace Chianni"
+  />
+
+  <!-- =====================================================
+       1) STYLES
+    ====================================================== -->
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/carousel.css"/>
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/carousel.css" />
 </head>
 
 <body>
+  <!-- =====================================================
+       NAVBAR (Injected)
+  ====================================================== -->
+  <div id="navbar-placeholder"></div>
 
-<!-- NAVBAR -->
-<div id="navbar-placeholder"></div>
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        Design as Ritual.<br />
+        Art as Language.<br />
+        Technology as the Method.
+      </h1>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-inner">
+      <p class="hero-subtitle">
+        I'm Ace, a UX/UI Designer specializing in wellness, lifestyle, and emotionally intelligent digital products.
+      </p>
 
-    <h1 class="hero-title">
-      Design as Ritual.<br/>
-      Art as Language.<br/>
-      Technology as the Method.
-    </h1>
-
-    <p class="hero-intro hero-sub">
-  I'm Ace, a UX/UI Designer specializing in wellness, lifestyle, and emotionally intelligent digital products.
-</p>
-
-
-    <a href="content.html" class="hero-cta">
-      Explore My Work
-    </a>
-
-  </div>
-</section>
-
-<section class="home-focus text-center">
-  <p class="focus-line">Wellness & mental health platforms</p>
-  <p class="focus-line">Human-centered web applications</p>
-  <p class="focus-line">Accessible, emotionally aware interfaces</p>
-</section>
-
-
-
-<!-- VISUAL STORY CAROUSEL -->
-<section class="carousel-section">
-  <div class="carousel-wrapper">
-
-    <div id="carouselNav" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <img src="images/acechianni.jpg" class="d-block w-100" alt="Ace portrait">
-          <div class="carousel-caption">
-            <h5>Who I Am</h5>
-            <p>
-              A creative shaped by psychology, softness, curiosity, and rebellion.
-              I build interfaces that carry emotion, meaning, and breath.
-            </p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="images/novaccert.jpg" class="d-block w-100" alt="NOVAC certification">
-          <div class="carousel-caption">
-            <h5>What I Build</h5>
-            <p>
-              Thoughtful digital spaces where functionality meets feeling —
-              rooted in accessibility, storytelling, and presence.
-            </p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="images/skills2.jpg" class="d-block w-100" alt="Ace creating art">
-          <div class="carousel-caption">
-            <h5>Why Design Matters</h5>
-            <p>
-              Because technology should soothe, empower, and reflect the fullness of human experience.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselNav" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-
+      <a class="hero-cta" href="content.html">Explore My Work</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- POSITIONING + AUTHORITY SECTION -->
-<section class="homepage-strategy">
+  <!-- =====================================================
+       FOCUS LINES (Positioning / quick specialties)
+  ====================================================== -->
+  <section class="home-focus text-center" aria-label="Design focus areas">
+    <p class="focus-line">Wellness &amp; mental health platforms</p>
+    <p class="focus-line">Human-centered web applications</p>
+    <p class="focus-line">Accessible, emotionally aware interfaces</p>
+  </section>
 
-  <h2>Rooted in Intention</h2>
+  <!-- =====================================================
+       VISUAL STORY CAROUSEL
+  ====================================================== -->
+  <section class="carousel-section" aria-label="About carousel">
+    <div class="carousel-wrapper">
+      <div
+        id="carouselNav"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="images/acechianni.jpg"
+              class="d-block w-100"
+              alt="Portrait of Ace Chianni"
+              loading="lazy"
+            />
+            <div class="carousel-caption">
+              <h5>Who I Am</h5>
+              <p>
+                A creative shaped by psychology, softness, curiosity, and rebellion.
+                I build interfaces that carry emotion, meaning, and breath.
+              </p>
+            </div>
+          </div>
 
-  <p class="strategy-text">
-    My work exists at the intersection of design, emotion, and human-centered thinking.
-    Though my path is unconventional, it is deeply intentional — shaped by lived experience,
-    artistic training, and an intuitive understanding of how people feel inside digital spaces.
-  </p>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="images/novaccert.jpg"
+              class="d-block w-100"
+              alt="NOVAC certification preview"
+              loading="lazy"
+            />
+            <div class="carousel-caption">
+              <h5>What I Build</h5>
+              <p>
+                Thoughtful digital spaces where functionality meets feeling —
+                rooted in accessibility, storytelling, and presence.
+              </p>
+            </div>
+          </div>
 
-  <ul class="strategy-list">
-    <li>Emotion-led UX & Interface design</li>
-    <li>Neurodivergent-accessible experiences</li>
-    <li>Story-rich visual systems</li>
-    <li>Psychology-informed interaction design</li>
-  </ul>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="images/skills2.jpg"
+              class="d-block w-100"
+              alt="Ace creating artwork"
+              loading="lazy"
+            />
+            <div class="carousel-caption">
+              <h5>Why Design Matters</h5>
+              <p>
+                Because technology should soothe, empower, and reflect the fullness of human experience.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  <p class="strategy-text" style="margin-top: 1rem;">
-    I don’t just design layouts — I create environments where users feel seen, regulated, and inspired.
-  </p>
-  <p class="small text-muted text-center">
-  Open to remote UX/UI and product design roles in wellness, lifestyle, and mission-driven spaces.
-</p>
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselNav"
+          data-bs-slide="prev"
+          aria-label="Previous slide"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
 
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselNav"
+          data-bs-slide="next"
+          aria-label="Next slide"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
 
-  <a href="about.html" class="secondary-cta">
-    Learn My Story
-  </a>
+      
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- =====================================================
+       POSITIONING / AUTHORITY
+  ====================================================== -->
+  <section class="homepage-strategy" aria-label="Positioning statement">
+    <h2>Rooted in Intention</h2>
 
-<!-- FOOTER -->
-<div id="footer-placeholder"></div>
+    <p class="strategy-text">
+      My work exists at the intersection of design, emotion, and human-centered thinking.
+      Though my path is unconventional, it is deeply intentional — shaped by lived experience,
+      artistic training, and an intuitive understanding of how people feel inside digital spaces.
+    </p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    <ul class="strategy-list">
+      <li>Emotion-led UX &amp; interface design</li>
+      <li>Neurodivergent-accessible experiences</li>
+      <li>Story-rich visual systems</li>
+      <li>Psychology-informed interaction design</li>
+    </ul>
 
+    <p class="strategy-text strategy-text--spaced">
+      I don’t just design layouts — I create environments where users feel seen, regulated, and inspired.
+    </p>
+
+    <p class="small text-muted text-center">
+      Open to remote UX/UI and product design roles in wellness, lifestyle, and mission-driven spaces.
+    </p>
+
+    <a class="secondary-cta" href="about.html">Learn My Story</a>
+  </section>
+
+  <!-- =====================================================
+       FOOTER (Injected)
+  ====================================================== -->
+  <div id="footer-placeholder"></div>
+
+  <!-- =====================================================
+       SCRIPTS
+  ====================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

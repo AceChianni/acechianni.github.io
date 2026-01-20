@@ -1,49 +1,64 @@
-<nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-custom shadow-sm" role="navigation" aria-label="Main navigation">
   <div class="container-fluid">
-
+    <!-- Brand -->
     <a class="navbar-brand fw-bold" href="index.html">Ace Chianni</a>
 
+    <!-- Mobile toggle -->
     <button
       class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Nav links -->
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center text-center text-lg-start">
-
         <li class="nav-item">
-          <a class="nav-link" href="index.html" data-page="index">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="content.html" data-page="content">My Works</a>
+          <a class="nav-link" href="content.html">My Works</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="about.html" data-page="about">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
 
+        <!-- External link -->
         <li class="nav-item ms-lg-3">
-          <a 
+          <a
             class="nav-link linkedin-link"
             href="https://www.linkedin.com/in/acelacabe/"
             target="_blank"
-            aria-label="LinkedIn profile"
+            rel="noopener noreferrer"
+            aria-label="Open LinkedIn profile in a new tab"
+            title="LinkedIn"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
+            <svg
+              class="nav-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
               <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6 1.13 6 0 4.88 0 3.5 0 2.12 1.13 1 2.5 1 3.85 1 4.98 2.12 4.98 3.5zM.04 8h4.91v16H.04V8zM8.48 8h4.71v2.16h.07c.66-1.25 2.27-2.56 4.67-2.56 5 0 5.93 3.29 5.93 7.56V24h-4.91v-7.87c0-1.88-.03-4.29-2.62-4.29-2.63 0-3.03 2.05-3.03 4.17V24H8.48V8z"/>
             </svg>
           </a>
         </li>
-
       </ul>
     </div>
   </div>
