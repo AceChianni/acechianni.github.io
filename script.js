@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
             caption: "Exploration-focused book discovery experience.",
           },
 
-          // ADD MORE SLIDES HERE 👇
+          // ADD MORE SLIDES 👇
           // {
           //   src: "images/inkspresso/checkout.jpg",
           //   heading: "Checkout",
