@@ -2,181 +2,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =====================================================
-       0) DOCUMENT SETUP
-  ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Work | Ace Chianni</title>
+  <title>Work | Ace Chianni</title>
 
-  <!-- =====================================================
-       1) VENDOR CSS
-  ====================================================== -->
+  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     crossorigin="anonymous"
   />
 
-  <!-- =====================================================
-       2) SITE CSS
-  ====================================================== -->
+  <!-- Site CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/case-studies.css" />
   <link rel="stylesheet" href="css/web-projects.css" />
 </head>
 
 <body>
-  <!-- =====================================================
-       NAVBAR (Injected via script.js)
-  ====================================================== -->
+  <!-- NAVBAR -->
   <div id="navbar-placeholder"></div>
 
-  <!-- =====================================================
-       PAGE HEADER
-  ====================================================== -->
+  <!-- PAGE HEADER -->
   <header class="text-center my-5">
-    <h1>Case Studies &amp; Creative Works</h1>
-    <p class="lead">Exploring design, storytelling, and digital craftsmanship.</p>
+    <h1>Selected Work</h1>
+    <p class="lead">
+      UX/UI case studies + calm digital experiences, with visual storytelling in the details.
+    </p>
   </header>
 
   <!-- =====================================================
-       1) CASE STUDIES 
+       1) FEATURED UX / PRODUCT CASE STUDIES
   ====================================================== -->
-  <main class="case-grid container py-5">
-    <!-- Case Study 1 -->
-    <article class="case-card fade-section">
-      <div class="case-image">
-        <img
-          src="images/movieposter.jpg"
-          alt="Minimalist Beauty and the Beast poster"
-          loading="lazy"
-        />
-        <span class="case-tag">Photoshop · Typography</span>
-      </div>
-      <div class="case-content">
-        <h3>Beauty &amp; The Beast — Minimalist Poster</h3>
-        <p>
-          A minimalist reimagining of the Disney classic, focused on silhouette,
-          negative space, and emotional tone. The poster captures Belle and Beast
-          mid-dance in soft blue hues, anchored by the line:
-          <em>“Who could ever learn to love a beast.”</em>
-        </p>
-        <p>
-          This study strengthened my approach to hierarchy, symbolism, and
-          typographic pacing while working within a highly constrained visual
-          language.
-        </p>
-        <div class="case-meta">
-          <span>Tools: Adobe Photoshop</span>
-          <span>Focus: Typography · Composition · Color Theory</span>
-        </div>
-      </div>
-    </article>
+  <section class="container py-4" aria-label="Featured UX case studies">
+    <h2 class="text-center mb-3">Featured UX / Product Case Studies</h2>
+    <p class="text-center mb-4 text-muted">
+      These are the projects where I owned the UX thinking, interface decisions, and product flow.
+    </p>
 
-    <!-- Case Study 2 -->
-    <article class="case-card fade-section">
-      <div class="case-image">
-        <img
-          src="images/postcard.jpg"
-          alt="Retro travel postcard for Tokyo, Japan"
-          loading="lazy"
-        />
-        <span class="case-tag">Photoshop · Vintage Design</span>
-      </div>
-      <div class="case-content">
-        <h3>Tokyo, Japan — Retro Travel Postcard</h3>
-        <p>
-          A collage-style postcard that layers found imagery, kanji, and English
-          typography to evoke a nostalgic view of Tokyo. The design combines
-          grain, texture overlays, and selective desaturation to create a
-          worn-in, print-inspired aesthetic.
-        </p>
-        <p>
-          This project focused on balancing visual noise with clarity and using
-          type, texture, and framing to suggest story and place.
-        </p>
-        <div class="case-meta">
-          <span>Tools: Adobe Photoshop</span>
-          <span>Focus: Collage · Texture · Typography Hierarchy</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Case Study 3 -->
-    <article class="case-card fade-section">
-      <div class="case-image">
-        <img
-          src="images/trick.jpg"
-          alt="Trompe l'oeil photo manipulation showing a back as a guitar"
-          loading="lazy"
-        />
-        <span class="case-tag">Digital Art · Conceptual Design</span>
-      </div>
-      <div class="case-content">
-        <h3>“Strings Attached” — Trompe L’oeil Self Portrait</h3>
-        <p>
-          A conceptual composite where my back transforms into the body of a
-          guitar, exploring identity, embodiment, and sound as extensions of
-          self. The illusion relies on careful blending, shadow work, and
-          texture alignment.
-        </p>
-        <p>
-          This piece refined my non-destructive editing workflow and challenged
-          me to integrate human anatomy with inanimate forms in a believable way.
-        </p>
-        <div class="case-meta">
-          <span>Tools: Adobe Photoshop</span>
-          <span>Focus: Photo Manipulation · Lighting · Layering</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Case Study 4 -->
-    <article class="case-card fade-section">
-      <div class="case-image">
-        <img src="images/BBlogo.jpg" alt="Brunch Babes logo" loading="lazy" />
-        <span class="case-tag">Brand Identity · Illustration</span>
-      </div>
-      <div class="case-content">
-        <h3>Brunch Babes — “Lemme Feed You”</h3>
-        <p>
-          A playful, feminine brand identity concept for
-          <strong>Brunch Babes</strong>, a one-woman culinary brand specializing
-          in pop-up brunch events and soul food. The visual direction blends
-          softness and confidence through hand-drawn marks, rounded forms, and a
-          comfort-driven palette.
-        </p>
-        <p>
-          The work includes logo exploration, wordmark refinement, and early
-          applications across social and packaging touchpoints.
-        </p>
-
-        <div class="case-gallery mt-3">
+    <div class="web-grid">
+      <!-- Featured 1 -->
+      <article class="web-card">
+        <div class="web-image">
           <img
-            src="images/BB-sketches.png"
-            alt="Brunch Babes initial logo sketches"
-            class="thumb-img"
+            src="images/inkspression/dashboard.jpg"
+            alt="Inkspression journaling dashboard"
             loading="lazy"
           />
-          <img
-            src="images/BBlogo.jpg"
-            alt="Brunch Babes logo concept"
-            class="thumb-img"
-            loading="lazy"
-          />
+          <span class="web-tag">UX/UI · Neurodivergent-friendly</span>
         </div>
 
-        <div class="case-meta mt-2">
-          <span>Tools: Adobe Photoshop</span>
-          <span>Focus: Identity Exploration · Illustration · Brand Story</span>
+        <div class="web-content">
+          <h3>Inkspression</h3>
+          <p class="mb-2">
+            Gentle journaling + productivity built to reduce overwhelm using focus modes, low-cognitive-load layouts,
+            and emotional check-ins.
+          </p>
+
+          <div class="web-meta">
+            <span><strong>Role:</strong> UX/UI, IA, interaction design</span><br />
+            <span><strong>Tools:</strong> React · TailwindCSS · Firebase</span>
+          </div>
+
+          <!-- MODAL trigger -->
+          <a href="#" class="btn-web" data-project="inkspression">View Case Study</a>
         </div>
-      </div>
-    </article>
-  </main>
+      </article>
+
+      <!-- Featured 2 -->
+      <article class="web-card">
+        <div class="web-image">
+          <img
+            src="images/anniime/home-light.jpg"
+            alt="AnniiMe Finder home page preview"
+            loading="lazy"
+          />
+          <span class="web-tag">Front-End · Onboarding UX</span>
+        </div>
+
+        <div class="web-content">
+          <h3>AnniiMe Finder</h3>
+          <p class="mb-2">
+            An anime discovery flow that reduces decision fatigue through a guided quiz, curated results,
+            and mood-based recommendation logic.
+          </p>
+
+          <div class="web-meta">
+            <span><strong>Role:</strong> UX flow + front-end implementation</span><br />
+            <span><strong>Tools:</strong> React · JavaScript · Jikan API</span>
+          </div>
+
+          <!-- MODAL trigger -->
+          <a href="#" class="btn-web" data-project="anniime">View Case Study</a>
+        </div>
+      </article>
+
+      <!-- Featured 3 -->
+      <article class="web-card">
+        <div class="web-image">
+          <img
+            src="images/inkspresso/dashboard.png"
+            alt="Inkspresso dashboard preview"
+            loading="lazy"
+          />
+          <span class="web-tag">Full-Stack · IA + System Design</span>
+        </div>
+
+        <div class="web-content">
+          <h3>Inkspresso <small class="text-muted">— Fuel Your Imagination</small></h3>
+          <p class="mb-2">
+            A cozy café-inspired eCommerce + digital library concept, designed for calm browsing and longer sessions
+            (café mode + library mode).
+          </p>
+
+          <div class="web-meta">
+            <span><strong>Role:</strong> UX, IA, UI, full-stack build</span><br />
+            <span><strong>Tools:</strong> Node.js · Express · MongoDB</span>
+          </div>
+
+          <!-- MODAL trigger -->
+          <a href="#" class="btn-web" data-project="inkspresso">View Case Study</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
   <!-- =====================================================
-       2) LIGHTBOX
+       2) VISUAL DESIGN & BRAND EXPLORATIONS
+  ====================================================== -->
+  <section class="container py-5" aria-label="Visual design explorations">
+    <h2 class="text-center mb-3">Visual Design &amp; Brand Explorations</h2>
+    <p class="text-center mb-4 text-muted">
+      Poster design, conceptual composites, and identity work — my visual storytelling foundation.
+    </p>
+
+    <main class="case-grid container py-4">
+      <!-- Visual 1 -->
+      <article class="case-card fade-section">
+        <div class="case-image">
+          <img
+            src="images/movieposter.jpg"
+            alt="Minimalist Beauty and the Beast poster"
+            loading="lazy"
+          />
+          <span class="case-tag">Photoshop · Typography</span>
+        </div>
+        <div class="case-content">
+          <h3>Beauty &amp; The Beast — Minimalist Poster</h3>
+          <p>
+            A minimalist reimagining focused on silhouette, negative space, and emotional tone.
+          </p>
+          <div class="case-meta">
+            <span>Tools: Adobe Photoshop</span>
+            <span>Focus: Typography · Composition · Color Theory</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Visual 2 -->
+      <article class="case-card fade-section">
+        <div class="case-image">
+          <img
+            src="images/postcard.jpg"
+            alt="Retro travel postcard for Tokyo, Japan"
+            loading="lazy"
+          />
+          <span class="case-tag">Photoshop · Vintage Design</span>
+        </div>
+        <div class="case-content">
+          <h3>Tokyo, Japan — Retro Travel Postcard</h3>
+          <p>
+            A collage-style postcard layering found imagery and type to evoke place and story.
+          </p>
+          <div class="case-meta">
+            <span>Tools: Adobe Photoshop</span>
+            <span>Focus: Collage · Texture · Typography Hierarchy</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Visual 3 -->
+      <article class="case-card fade-section">
+        <div class="case-image">
+          <img
+            src="images/trick.jpg"
+            alt="Trompe l'oeil photo manipulation showing a back as a guitar"
+            loading="lazy"
+          />
+          <span class="case-tag">Digital Art · Concept</span>
+        </div>
+        <div class="case-content">
+          <h3>“Strings Attached” — Trompe L’oeil Self Portrait</h3>
+          <p>
+            A conceptual composite exploring identity, embodiment, and sound as extensions of self.
+          </p>
+          <div class="case-meta">
+            <span>Tools: Adobe Photoshop</span>
+            <span>Focus: Photo Manipulation · Lighting · Layering</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Visual 4 -->
+      <article class="case-card fade-section">
+        <div class="case-image">
+          <img src="images/BBlogo.jpg" alt="Brunch Babes logo" loading="lazy" />
+          <span class="case-tag">Brand Identity · Illustration</span>
+        </div>
+        <div class="case-content">
+          <h3>Brunch Babes — “Lemme Feed You”</h3>
+          <p>
+            A playful, feminine brand identity concept blending hand-drawn marks, rounded forms,
+            and a comfort-driven palette.
+          </p>
+
+          <div class="case-gallery mt-3">
+            <img
+              src="images/BB-sketches.png"
+              alt="Brunch Babes initial logo sketches"
+              class="thumb-img"
+              loading="lazy"
+            />
+            <img
+              src="images/BBlogo.jpg"
+              alt="Brunch Babes logo concept"
+              class="thumb-img"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="case-meta mt-2">
+            <span>Tools: Adobe Photoshop</span>
+            <span>Focus: Identity Exploration · Illustration · Brand Story</span>
+          </div>
+        </div>
+      </article>
+    </main>
+  </section>
+
+  <!-- =====================================================
+       LIGHTBOX (for visual work)
   ====================================================== -->
   <div
     id="lightbox"
@@ -189,191 +254,75 @@
   </div>
 
   <!-- =====================================================
-       3) WEB PROJECTS & UX/UI BUILDS
-  ====================================================== -->
-  <section id="web-projects" class="fade-section container py-5">
-    <h2 class="text-center mb-4">Web Projects &amp; UX/UI Builds</h2>
-    <p class="text-center mb-5 lead">
-      Exploring creativity through code — blending user psychology, design
-      systems, and functionality.
-    </p>
-
-    <div class="web-grid">
-      <!-- Project 1: AnniiMe Finder -->
-      <article class="web-card">
-        <div class="web-image">
-          <img
-            src="images/anniime/home-light.jpg"
-            alt="AnniiMe Finder home page preview"
-            loading="lazy"
-          />
-          <span class="web-tag">Front-End · API Integration</span>
-        </div>
-
-        <div class="web-content">
-          <h3>AnniiMe Finder</h3>
-          <p>
-            A React-based anime discovery platform that guides new viewers into
-            anime through a gentle onboarding quiz, curated recommendations, and
-            light/dark theming tailored to mood.
-          </p>
-          <p class="mb-2">
-            My focus was on reducing decision fatigue for beginners by turning a
-            vast, overwhelming catalog into a structured, mood-driven experience.
-          </p>
-
-          <div class="web-meta">
-            <span>Tools: React · JavaScript · Jikan API</span>
-          </div>
-
-          <a href="#" class="btn-web" data-project="anniime">View Case Study</a>
-        </div>
-      </article>
-
-      <!-- Project 2: Inkspresso -->
-      <article class="web-card">
-        <div class="web-image">
-          <img
-            src="images/inkspresso/dashboard.png"
-            alt="Inkspresso dashboard preview"
-            loading="lazy"
-          />
-          <span class="web-tag">Full-Stack · eCommerce</span>
-        </div>
-
-        <div class="web-content">
-          <h3>
-            Inkspresso <small class="text-muted">— Fuel Your Imagination</small>
-          </h3>
-
-          <p>
-            A cozy café-inspired eCommerce and digital library concept that
-            merges books, brews, and mindful browsing. Users can explore drinks,
-            discover new reads, and move between “café” and “library” modes.
-          </p>
-          <p class="mb-2">
-            I owned the full stack: designing the information architecture,
-            building REST endpoints, and crafting a dark-mode friendly interface
-            for longer reading and browsing sessions.
-          </p>
-
-          <div class="web-meta">
-            <span>Tools: Node.js · Express · MongoDB</span>
-          </div>
-
-          <a href="#" class="btn-web" data-project="inkspresso">View Case Study</a>
-        </div>
-      </article>
-
-      <!-- Project 3: Inkspression -->
-      <article class="web-card">
-        <div class="web-image">
-          <img
-            src="images/inkspression/dashboard.jpg"
-            alt="Inkspression journaling dashboard"
-            loading="lazy"
-          />
-          <span class="web-tag">UX/UI · Productivity App</span>
-        </div>
-
-        <div class="web-content">
-          <h3>Inkspression</h3>
-          <p>
-            A neurodivergent-friendly journaling and productivity platform built
-            to support reflection, mood tracking, and gentle structure without
-            overwhelm. Users can switch themes, customize layouts, and use focus
-            modes.
-          </p>
-          <p class="mb-2">
-            This project combines my background in psychology with UX to design
-            calmer, more forgiving interfaces for users who don’t fit
-            one-size-fits-all productivity tools.
-          </p>
-
-          <div class="web-meta">
-            <span>Tools: React · TailwindCSS · Firebase</span>
-          </div>
-
-          <a href="#" class="btn-web" data-project="inkspression">View Case Study</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- =====================================================
-       4) PROJECT MODAL (Bootstrap Carousel)
+       PROJECT MODAL (JS injects carousel + case study HTML)
   ====================================================== -->
   <div
-  id="project-modal"
-  class="project-modal"
-  aria-modal="true"
-  role="dialog"
-  aria-hidden="true"
-  aria-labelledby="modal-title"
-  tabindex="-1"
->
-  <div class="modal-content" role="document">
-    <span class="modal-close" aria-label="Close project view" role="button" tabindex="0">&times;</span>
-
-    <div class="carousel-wrapper">
-      <div
-        id="projectCarousel"
-        class="carousel slide"
-        data-bs-ride="false"
-        data-bs-interval="false"
+    id="project-modal"
+    class="project-modal"
+    aria-modal="true"
+    role="dialog"
+    aria-hidden="true"
+    aria-labelledby="modal-title"
+    tabindex="-1"
+  >
+    <div class="modal-content" role="document">
+      <span
+        class="modal-close"
+        aria-label="Close project view"
+        role="button"
         tabindex="0"
-        aria-label="Project screenshots carousel"
-      >
-        <div class="carousel-indicators" id="project-carousel-indicators">
-          <!-- injected via JS -->
-        </div>
+      >&times;</span>
 
-        <div class="carousel-inner" id="project-carousel-inner">
-          <!-- injected via JS -->
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#projectCarousel"
-          data-bs-slide="prev"
-          aria-label="Previous slide"
+      <div class="carousel-wrapper">
+        <div
+          id="projectCarousel"
+          class="carousel slide"
+          data-bs-ride="false"
+          data-bs-interval="false"
+          tabindex="0"
+          aria-label="Project screenshots carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
+          <div class="carousel-indicators" id="project-carousel-indicators"></div>
+          <div class="carousel-inner" id="project-carousel-inner"></div>
 
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#projectCarousel"
-          data-bs-slide="next"
-          aria-label="Next slide"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="prev"
+            aria-label="Previous slide"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="next"
+            aria-label="Next slide"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- This box scrolls  -->
+      <div class="modal-text mt-3">
+        <h3 id="modal-title"></h3>
+        <div id="modal-meta" class="modal-meta"></div>
+        <p id="slide-caption" class="slide-caption mb-2"></p>
+        <div id="modal-description"></div>
       </div>
     </div>
-
-    <div class="modal-text mt-4">
-      <h3 id="modal-title"></h3>
-      <p id="slide-caption" class="slide-caption mb-2"></p>
-      <p id="modal-description" class="mb-2"></p>
-      <div id="modal-meta" class="modal-meta"></div>
-    </div>
   </div>
-</div>
 
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
+  <!-- FOOTER -->
   <div id="footer-placeholder"></div>
 
-  <!-- =====================================================
-       SCRIPTS
-  ====================================================== -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>

@@ -2,27 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =====================================================
-       0) DOCUMENT META
-  ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ace Chianni | UX/UI Designer for Wellness &amp; Human-Centered Products</title>
+  <title>Ace Chianni | UX/UI Designer for Wellness & Human-Centered Products</title>
 
-  <!-- SEO -->
   <meta
     name="description"
-    content="Ace Chianni is a multidisciplinary designer blending UX/UI, art, psychology, and wellness into emotionally resonant digital experiences."
+    content="Ace Chianni is a UX/UI & Product Designer creating calm, accessible digital experiences for wellness and mental health products."
   />
   <meta
     name="keywords"
-    content="UX Designer, UI Designer, Product Designer, Creative Technologist, Wellness Design, Portfolio, Ace Chianni"
+    content="UX Designer, UI Designer, Product Designer, Wellness UX, Mental Health UX, Accessibility, Portfolio, Ace Chianni"
   />
-
-  <!-- =====================================================
-       1) STYLES
-    ====================================================== -->
 
   <!-- Bootstrap -->
   <link
@@ -31,171 +23,167 @@
     crossorigin="anonymous"
   />
 
-  <!-- Site Styles -->
+  <!-- Site CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/carousel.css" />
 </head>
 
 <body>
-  <!-- =====================================================
-       NAVBAR (Injected)
-  ====================================================== -->
+  <!-- NAVBAR  -->
   <div id="navbar-placeholder"></div>
 
-  <!-- =====================================================
-       HERO
-  ====================================================== -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="hero-title">
-        Design as Ritual.<br />
-        Art as Language.<br />
-        Technology as the Method.
-      </h1>
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="container-narrow">
+      <p class="hero-eyebrow">UX/UI • Product Design • Wellness / Mental Health</p>
+
+      <h1 class="hero-title">Calm digital experiences for real human needs.</h1>
 
       <p class="hero-subtitle">
-        I'm Ace, a UX/UI Designer specializing in wellness, lifestyle, and emotionally intelligent digital products.
+        I’m <strong>Ace Chianni</strong>, a UX/UI &amp; Product Designer blending psychology, accessibility,
+        and visual storytelling to reduce overwhelm, support focus, and create gentle user flows —
+        especially for wellness and mission-driven products.
       </p>
 
-      <a class="hero-cta" href="content.html">Explore My Work</a>
+      <!--  primary CTA + supporting text links -->
+      <div class="hero-actions">
+        <a class="hero-cta" href="content.html">View Case Studies</a>
+        <a class="text-link" href="contact.html">Contact</a>
+        <a class="text-link" href="about.html">About</a>
+      </div>
+
+      <div class="hero-chips mt-4" aria-label="Core skills">
+        <span class="badge rounded-pill text-bg-light px-3 py-2">Product UX</span>
+        <span class="badge rounded-pill text-bg-light px-3 py-2">Accessibility-first</span>
+        <span class="badge rounded-pill text-bg-light px-3 py-2">Design Systems</span>
+        <span class="badge rounded-pill text-bg-light px-3 py-2">Frontend-aware</span>
+      </div>
     </div>
   </header>
 
-  <!-- =====================================================
-       FOCUS LINES (Positioning / quick specialties)
-  ====================================================== -->
-  <section class="home-focus text-center" aria-label="Design focus areas">
-    <p class="focus-line">Wellness &amp; mental health platforms</p>
-    <p class="focus-line">Human-centered web applications</p>
-    <p class="focus-line">Accessible, emotionally aware interfaces</p>
-  </section>
+  <!-- FEATURED WORK -->
+  <section class="container-narrow py-5" aria-label="Featured work">
+    <div class="section-header">
+      <h2 class="section-title">Featured Case Studies</h2>
+      <a href="content.html" class="section-link">See all work →</a>
+    </div>
 
-  <!-- =====================================================
-       VISUAL STORY CAROUSEL
-  ====================================================== -->
-  <section class="carousel-section" aria-label="About carousel">
-    <div class="carousel-wrapper">
-      <div
-        id="carouselNav"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img
-              src="images/acechianni.jpg"
-              class="d-block w-100"
-              alt="Portrait of Ace Chianni"
-              loading="lazy"
-            />
-            <div class="carousel-caption">
-              <h5>Who I Am</h5>
-              <p>
-                A creative shaped by psychology, softness, curiosity, and rebellion.
-                I build interfaces that carry emotion, meaning, and breath.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img
-              src="images/novaccert.jpg"
-              class="d-block w-100"
-              alt="NOVAC certification preview"
-              loading="lazy"
-            />
-            <div class="carousel-caption">
-              <h5>What I Build</h5>
-              <p>
-                Thoughtful digital spaces where functionality meets feeling —
-                rooted in accessibility, storytelling, and presence.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img
-              src="images/skills2.jpg"
-              class="d-block w-100"
-              alt="Ace creating artwork"
-              loading="lazy"
-            />
-            <div class="carousel-caption">
-              <h5>Why Design Matters</h5>
-              <p>
-                Because technology should soothe, empower, and reflect the fullness of human experience.
-              </p>
-            </div>
-          </div>
+    <div class="featured-list">
+      <!-- Inkspression -->
+      <article class="featured-item">
+        <div class="featured-thumb">
+          <img
+            src="images/inkspression/dashboard.jpg"
+            alt="Inkspression dashboard preview"
+            loading="lazy"
+          />
         </div>
 
-        <!-- Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselNav"
-          data-bs-slide="prev"
-          aria-label="Previous slide"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
+        <div>
+          <div class="featured-meta">
+            <h3>Inkspression</h3>
+            <span class="featured-tagline">UX/UI • Neurodivergent-friendly</span>
+          </div>
 
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselNav"
-          data-bs-slide="next"
-          aria-label="Next slide"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+          <p class="featured-desc">
+            Gentle journaling + productivity designed to reduce overwhelm through focus modes,
+            low-cognitive-load layouts, and emotional check-ins.
+          </p>
 
-      
+          <p class="featured-role">
+            <strong>Role:</strong> UX/UI, IA, interaction design ·
+            <strong>Tools:</strong> React, Tailwind, Firebase
+          </p>
+
+          <a href="content.html" class="text-link text-link--bold">Read case study →</a>
+        </div>
+      </article>
+
+      <!-- AnniiMe Finder -->
+      <article class="featured-item">
+        <div class="featured-thumb">
+          <img
+            src="images/anniime/home-light.jpg"
+            alt="AnniiMe Finder home page preview"
+            loading="lazy"
+          />
+        </div>
+
+        <div>
+          <div class="featured-meta">
+            <h3>AnniiMe Finder</h3>
+            <span class="featured-tagline">Onboarding UX • Decision fatigue</span>
+          </div>
+
+          <p class="featured-desc">
+            A guided onboarding quiz that helps beginners discover anime without overwhelm —
+            curated results, mood-based discovery, and comfort theming.
+          </p>
+
+          <p class="featured-role">
+            <strong>Role:</strong> UX flow + front-end implementation ·
+            <strong>Tools:</strong> React, JavaScript, Jikan API
+          </p>
+
+          <a href="content.html" class="text-link text-link--bold">Read case study →</a>
+        </div>
+      </article>
+
+      <!-- Inkspresso -->
+      <article class="featured-item">
+        <div class="featured-thumb">
+          <img
+            src="images/inkspresso/dashboard.png"
+            alt="Inkspresso dashboard preview"
+            loading="lazy"
+          />
+        </div>
+
+        <div>
+          <div class="featured-meta">
+            <h3>Inkspresso</h3>
+            <span class="featured-tagline">IA + System Design • Full-stack</span>
+          </div>
+
+          <p class="featured-desc">
+            Cozy café eCommerce + digital library concept built for calm browsing and longer sessions
+            (café mode + library mode).
+          </p>
+
+          <p class="featured-role">
+            <strong>Role:</strong> UX, IA, UI, full-stack build ·
+            <strong>Tools:</strong> Node.js, Express, MongoDB
+          </p>
+
+          <a href="content.html" class="text-link text-link--bold">Read case study →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW I DESIGN -->
+  <section class="container-narrow pb-5" aria-label="How I work">
+    <div class="homepage-strategy">
+      <h2>How I design</h2>
+
+      <ul>
+        <li><strong>Clarity first:</strong> simple hierarchy, fewer choices, calmer flows.</li>
+        <li><strong>Accessibility as baseline:</strong> readable type, predictable patterns, inclusive defaults.</li>
+        <li><strong>Emotion-aware UX:</strong> designing for overwhelm, transitions, and real-life attention limits.</li>
+        <li><strong>Build-ready thinking:</strong> components, states, and systems that translate cleanly to dev.</li>
+      </ul>
+
+      <!--  CTAs -->
+      <div class="homepage-actions">
+        <a class="text-link text-link--bold" href="content.html">Explore my work</a>
+        <a class="text-link" href="contact.html">Let’s chat</a>
       </div>
     </div>
   </section>
 
-  <!-- =====================================================
-       POSITIONING / AUTHORITY
-  ====================================================== -->
-  <section class="homepage-strategy" aria-label="Positioning statement">
-    <h2>Rooted in Intention</h2>
-
-    <p class="strategy-text">
-      My work exists at the intersection of design, emotion, and human-centered thinking.
-      Though my path is unconventional, it is deeply intentional — shaped by lived experience,
-      artistic training, and an intuitive understanding of how people feel inside digital spaces.
-    </p>
-
-    <ul class="strategy-list">
-      <li>Emotion-led UX &amp; interface design</li>
-      <li>Neurodivergent-accessible experiences</li>
-      <li>Story-rich visual systems</li>
-      <li>Psychology-informed interaction design</li>
-    </ul>
-
-    <p class="strategy-text strategy-text--spaced">
-      I don’t just design layouts — I create environments where users feel seen, regulated, and inspired.
-    </p>
-
-    <p class="small text-muted text-center">
-      Open to remote UX/UI and product design roles in wellness, lifestyle, and mission-driven spaces.
-    </p>
-
-    <a class="secondary-cta" href="about.html">Learn My Story</a>
-  </section>
-
-  <!-- =====================================================
-       FOOTER (Injected)
-  ====================================================== -->
+  <!-- FOOTER -->
   <div id="footer-placeholder"></div>
 
-  <!-- =====================================================
-       SCRIPTS
-  ====================================================== -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
