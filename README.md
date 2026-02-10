@@ -5,7 +5,7 @@ This began as a captone project to create a mock simple portfoliio in order to d
 
 ## Capstone Project Description
 
-My project is a simple portfolio layout using cards, carousels, and a calculator to display the work that I've done and the journey I've been on to get to where I am today. It is just a clean design with some dynamic text and graphics utilizing some of the skills I've gathered today.
+My project is a simple portfolio layout using cards, carousels, and timelines to display the work that I've done and the journey I've been on to get to where I am today. It is just a clean design with some dynamic text and graphics utilizing some of the skills I've gathered today.
 
 ---
 
@@ -127,35 +127,6 @@ At the end of it all, this was a fun experience. I do want to play around more s
 
 Utilized ChatGPT to fix small bugs as well as help me figure out how to wire up some of my content (Timeline, Skills table, Calculator)
 
-All images in carousel and cards sourced from Unsplash
-
-Author: Jakob Owens
-https://images.unsplash.com/photo-1632187981988-40f3cbaeef5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-Author: Brands&People
-https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-Author: Billy Freeman
-https://images.unsplash.com/photo-1621701816825-b5abfadae6c3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZpbG0lMjBwcm9kdWN0aW9ufGVufDB8fDB8fHww/776x560
-
-Author: Logo Miz Editor
-https://images.unsplash.com/photo-1626251851903-1143b5c6f057?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZ28lMjBkZXNpZ258ZW58MHx8MHx8fDA%3D/200x300
-
-Author: Amelie Mourichon
-https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-Author: RhondaK Native Florida Folk Artist
-https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZGVwYXJ0bWVudCUyMGluJTIwZmlsbXxlbnwwfHwwfHx8MA==/200x300
-
-Author: Jabari Timothy
-https://images.unsplash.com/photo-1653263169991-50fb6e1c8836?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-Author: Getty Images
-https://plus.unsplash.com/premium_photo-1661281218380-6da78d52ac76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-Author: Brett Jordan
-https://images.unsplash.com/photo-1620112626650-c1d724c1ed97?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
 ## H1 font imported from Google fonts
 
 ## Additional Information
@@ -166,10 +137,4 @@ Clone from Github
 Open preffered coding system
 Have at it
 
-### Usage
-
-Explain how to use the project. Include any necessary commands, user instructions, or examples.
-
 ---
-
-**Note to Students:** Be sure to update this README daily with your reflections and maintain it as a living document throughout your project. This file not only serves as a diary of your progress but also as a comprehensive overview of your capstone project for anyone who visits your repository.
