@@ -138,149 +138,128 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // PROJECT DATA 
   const projects = {
-    inkspression: {
-      title: "Inkspression",
-      meta: "Role: UX/UI, IA, interaction design · Tools: React · TailwindCSS · Firebase",
-      overview:
-        "A neurodivergent-friendly journaling + productivity experience designed to reduce overwhelm through gentle structure, emotional check-ins, and low-cognitive-load layouts.",
-      slides: [
-        { src: "images/inkspression/dashboard.jpg", heading: "Dashboard", caption: "A calm home base: mood, prompts, and recent entries." },
-        { src: "images/inkspression/theme.jpg", heading: "Themes", caption: "Sensory-friendly themes for different emotional states." },
-        { src: "images/inkspression/entry.jpg", heading: "Journal Entry", caption: "A focused writing space with minimal distractions." },
+  inkspression: {
+    title: "Inkspression",
+    meta: "Role: UX/UI, IA, Interaction Design · Tools: React · TailwindCSS · Firebase",
+
+    overview:
+      "A neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload through gentle structure, emotional check-ins, and low-pressure interaction patterns.",
+
+    slides: [
+      { src: "images/inkspression/dashboard.jpg", heading: "Dashboard", caption: "A calm home base prioritizing emotional state, recent entries, and one clear next action." },
+      { src: "images/inkspression/theme.jpg", heading: "Themes", caption: "Sensory-aware themes that adapt to emotional and cognitive needs." },
+      { src: "images/inkspression/entry.jpg", heading: "Journal Entry", caption: "A distraction-free writing space designed for emotional safety and focus." },
+    ],
+
+    caseStudy: {
+       problem:
+    "Many journaling and productivity tools rely on streaks, gamification, and dense dashboards that unintentionally increase anxiety. For users prone to overwhelm, these systems create pressure instead of support—making it harder to begin and harder to return.",
+
+  insight:
+    "Community discussions and informal user interviews showed a consistent pattern: neurodivergent users often abandon journaling apps due to visual clutter, pressure mechanics, and rigid structures that don’t adapt to fluctuating energy or emotional states.",
+
+  goals: [
+    "Reduce cognitive load during reflection",
+    "Support emotional regulation rather than performance",
+    "Allow customization without complexity",
+    "Maintain strong accessibility across themes",
+  ],
+
+  decisions: [
+    "Low-density layouts and generous spacing to reduce sensory load",
+    "Theme personalization tied to emotional states to support regulation and autonomy",
+    "Removal of streaks and punitive language to reduce shame-based drop-off",
+    "One primary action per screen to improve clarity and reduce decision fatigue",
+  ],
+
+  impact:
+    "Designed to reduce friction at the moment of starting a journaling session and increase repeat use by making the experience feel safe, forgiving, and non-performative.",
+
+  reflection:
+    "Next iterations include usability testing with neurodivergent users, onboarding under 60 seconds, and adaptive UI that responds to emotional check-ins by adjusting layout density, prompts, and visual intensity.",
+},
+  },
+
+  anniime: {
+    title: "Anniime Finder",
+    meta: "Role: UX/Product Designer + Front-End Developer · Tools: React · JavaScript · Jikan API",
+
+    overview:
+      "A guided anime discovery tool that helps new viewers find shows quickly without decision fatigue.",
+
+    slides: [
+      { src: "images/anniime/home-light.jpg", heading: "Landing", caption: "A welcoming entry point designed for first-time anime viewers." },
+      { src: "images/anniime/quiz-dark.jpg", heading: "Quiz", caption: "Preference-based onboarding converts taste into recommendations." },
+      { src: "images/anniime/search-dark.jpg", heading: "Results", caption: "Grouped results for fast scanning and low-pressure selection." },
+    ],
+
+    caseStudy: {
+      problem:
+        "New anime viewers face analysis paralysis due to massive catalogs, niche genre labels, and community recommendations that assume prior knowledge.",
+
+      insight:
+        "Beginner viewers often spend more time searching than watching, leading to drop-off before starting a series.",
+
+      goals: [
+        "Reduce time-to-first-watch decision",
+        "Create a friendly onboarding experience",
+        "Present results in a digestible format",
       ],
-      caseStudy: {
-        problem:
-          "Many journaling/productivity tools increase anxiety with dense dashboards, rigid prompts, and gamified pressure. Users who experience overwhelm need an experience that supports regulation, not performance.",
-        goals: [
-          "Reduce cognitive load during reflection",
-          "Support emotional safety + self-paced use",
-          "Make customization feel calming (not complicated)",
-          "Keep accessibility strong across themes",
-        ],
-        decisions: [
-          "Low-density layouts + generous spacing to reduce overwhelm",
-          "Theme flexibility to match mood and sensory needs",
-          "No streaks/punishment language — gentle, forgiving UX",
-          "Clear hierarchy: one primary action per screen",
-        ],
-        reflection:
-          "Next iterations would include lightweight usability testing with neurodivergent users and a clearer onboarding that teaches the system in under 60 seconds.",
-      },
-    },
 
-    anniime: {
-      title: "Anniime Finder",
-      meta: "Role: UX/Product Designer + Front-End Developer · Tools: React · JavaScript · Jikan API",
-      overview:
-        "A guided anime discovery experience designed to reduce decision fatigue for first time anime watchers",
-      slides: [
-        { src: "images/anniime/home-light.jpg", heading: "Landing", caption: "A guided entry point designed for first-time users." },
-        { src: "images/anniime/quiz-dark.jpg", heading: "Quiz", caption: "Guided onboarding turns preferences into recommendations." },
-        { src: "images/anniime/search-dark.jpg", heading: "Results", caption: "Grouped recommendations for easier scanning." },
+      decisions: [
+        "Quiz-based onboarding instead of open search",
+        "Clear grouping and minimal UI noise",
+        "Light/dark modes for comfort and accessibility",
       ],
-      caseStudy: {
-        problem:
-          "New anime viewers often feel overwhelmed by huge catalogs and unclear genre systems. “What should I watch?” becomes a high-friction decision.",
-        goals: ["Reduce decision fatigue for initial content discovery", "Create a guided, friendly onboarding", "Present results in a scannable & low-pressure format"],
-        decisions: ["Quiz-based onboarding instead of open search", "Clear grouping + consistent UI", "Light/dark mode for comfort"],
-        reflection:
-          "A next step is improving recommendation explainability (“why you got this”) to increase trust and conversion to click-through.",
-      },
-    },
 
-    inkspresso: {
-      title: "Inkspresso — Fuel Your Imagination",
-      meta: "Role: UX, IA, UI, full-stack build · Tools: Node.js · Express · MongoDB",
-      overview:
-        "A cozy café-inspired eCommerce + digital library concept designed for calm browsing, longer sessions, and exploration-first navigation.",
-      slides: [
-        { src: "images/inkspresso/dashboard.png", heading: "Dashboard", caption: "A central hub connecting café + library experiences." },
-        { src: "images/inkspresso/menu.jpg", heading: "Café Menu", caption: "Warm browsing that doesn’t feel pushy or loud." },
-        { src: "images/inkspresso/library.png", heading: "Library", caption: "Exploration-first book discovery." },
+      impact:
+        "Designed to reduce decision time from 20+ minutes of browsing to a few guided steps.",
+
+      reflection:
+        "Next steps include explainable recommendations ('Why this match?') and personalization memory for returning users.",
+    },
+  },
+
+  inkspresso: {
+    title: "Inkspresso — Fuel Your Imagination",
+    meta: "Role: UX, IA, UI, Full-Stack Build · Tools: Node.js · Express · MongoDB",
+
+    overview:
+      "A cozy café-inspired eCommerce and digital library experience focused on calm browsing and exploration-first navigation.",
+
+    slides: [
+      { src: "images/inkspresso/dashboard.png", heading: "Dashboard", caption: "A hub connecting café and library experiences." },
+      { src: "images/inkspresso/menu.jpg", heading: "Café Menu", caption: "Warm, low-pressure browsing without urgency tactics." },
+      { src: "images/inkspresso/library.png", heading: "Library", caption: "Exploration-driven discovery for books and resources." },
+    ],
+
+    caseStudy: {
+      problem:
+        "Many eCommerce platforms rely on urgency, popups, and dense layouts that make browsing feel stressful rather than enjoyable.",
+
+      insight:
+        "Users seeking cozy or hobby-based shopping experiences value atmosphere and discovery over speed and pressure.",
+
+      goals: [
+        "Encourage exploration without pressure",
+        "Create a welcoming, calm atmosphere",
+        "Support long-session browsing",
       ],
-      caseStudy: {
-        problem:
-          "Many eCommerce experiences are aggressive and dense, turning browsing into pressure. Users who want a cozy experience need calmer hierarchy and clearer exploration paths.",
-        goals: ["Create an inviting browsing experience", "Separate exploration from purchase pressure", "Support long-form discovery"],
-        decisions: ["Café vs library modes", "Dark-mode-friendly UI", "Exploration-first hierarchy"],
-        reflection:
-          "Next steps: test navigation labels, improve filtering, and refine checkout microcopy to reduce friction without increasing pressure.",
-      },
+
+      decisions: [
+        "Separated café and library modes for mental clarity",
+        "Dark-mode-friendly, cozy visual design",
+        "Exploration-first hierarchy instead of pushy CTAs",
+      ],
+
+      impact:
+        "Designed to increase session time and discovery by making browsing feel leisurely rather than transactional.",
+
+      reflection:
+        "Future improvements include navigation testing, refined filtering, and checkout microcopy that reduces friction without adding urgency.",
     },
-  };
-
-    // PROJECT DATA 
-      // const projects = {
-      //     inkspression: {
-      //           title: "Inkspression",
-      //                 meta: "Role: UX/UI, IA, interaction design · Tools: React · TailwindCSS · Firebase",
-      //                       overview:
-      //                               "A neurodivergent-friendly journaling + productivity experience designed to reduce overwhelm through gentle structure, emotional check-ins, and low-cognitive-load layouts.",
-      //                                     slides: [
-      //                                             { src: "images/inkspression/dashboard.jpg", heading: "Dashboard", caption: "A calm home base: mood, prompts, and recent entries." },
-      //                                                     { src: "images/inkspression/theme.jpg", heading: "Themes", caption: "Sensory-friendly themes for different emotional states." },
-      //                                                             { src: "images/inkspression/entry.jpg", heading: "Journal Entry", caption: "A focused writing space with minimal distractions." },
-      //                                                                   ],
-      //                                                                         caseStudy: {
-      //                                                                                 problem:
-      //                                                                                           "Many journaling/productivity tools increase anxiety with dense dashboards, rigid prompts, and gamified pressure. Users who experience overwhelm need an experience that supports regulation, not performance.",
-      //                                                                                                   goals: [
-      //                                                                                                             "Reduce cognitive load during reflection",
-      //                                                                                                                       "Support emotional safety + self-paced use",
-      //                                                                                                                                 "Make customization feel calming (not complicated)",
-      //                                                                                                                                           "Keep accessibility strong across themes",
-      //                                                                                                                                                   ],
-      //                                                                                                                                                           decisions: [
-      //                                                                                                                                                                     "Low-density layouts + generous spacing to reduce overwhelm",
-      //                                                                                                                                                                               "Theme flexibility to match mood and sensory needs",
-      //                                                                                                                                                                                         "No streaks/punishment language — gentle, forgiving UX",
-      //                                                                                                                                                                                                   "Clear hierarchy: one primary action per screen",
-      //                                                                                                                                                                                                           ],
-      //                                                                                                                                                                                                                   reflection:
-      //                                                                                                                                                                                                                             "Next iterations would include lightweight usability testing with neurodivergent users and a clearer onboarding that teaches the system in under 60 seconds.",
-      //                                                                                                                                                                                                                                   },
-      //                                                                                                                                                                                                                                       },
-
-      //                                                                                                                                                                                                                                           anniime: {
-      //                                                                                                                                                                                                                                                 title: "Anniime Finder",
-      //                                                                                                                                                                                                                                                       meta: "Role: UX/Product Designer + Front-End Developer · Tools: React · JavaScript · Jikan API",
-      //                                                                                                                                                                                                                                                             overview:
-      //                                                                                                                                                                                                                                                                     "A guided anime discovery experience designed to reduce decision fatigue for first time anime watchers",
-      //                                                                                                                                                                                                                                                                           slides: [
-      //                                                                                                                                                                                                                                                                                   { src: "images/anniime/home-light.jpg", heading: "Landing", caption: "A guided entry point designed for first-time users." },
-      //                                                                                                                                                                                                                                                                                           { src: "images/anniime/quiz-dark.jpg", heading: "Quiz", caption: "Guided onboarding turns preferences into recommendations." },
-      //                                                                                                                                                                                                                                                                                                   { src: "images/anniime/search-dark.jpg", heading: "Results", caption: "Grouped recommendations for easier scanning." },
-      //                                                                                                                                                                                                                                                                                                         ],
-      //                                                                                                                                                                                                                                                                                                               caseStudy: {
-      //                                                                                                                                                                                                                                                                                                                       problem:
-      //                                                                                                                                                                                                                                                                                                                                 "New anime viewers often feel overwhelmed by huge catalogs and unclear genre systems. “What should I watch?” becomes a high-friction decision.",
-      //                                                                                                                                                                                                                                                                                                                                         goals: ["Reduce decision fatigue for initial content discovery", "Create a guided, friendly onboarding", "Present results in a scannable & low-pressure format"],
-      //                                                                                                                                                                                                                                                                                                                                                 decisions: ["Quiz-based onboarding instead of open search", "Clear grouping + consistent UI", "Light/dark mode for comfort"],
-      //                                                                                                                                                                                                                                                                                                                                                         reflection:
-      //                                                                                                                                                                                                                                                                                                                                                                   "A next step is improving recommendation explainability (“why you got this”) to increase trust and conversion to click-through.",
-      //                                                                                                                                                                                                                                                                                                                                                                         },
-      //                                                                                                                                                                                                                                                                                                                                                                             },
-
-      //                                                                                                                                                                                                                                                                                                                                                                                 inkspresso: {
-      //                                                                                                                                                                                                                                                                                                                                                                                       title: "Inkspresso — Fuel Your Imagination",
-      //                                                                                                                                                                                                                                                                                                                                                                                             meta: "Role: UX, IA, UI, full-stack build · Tools: Node.js · Express · MongoDB",
-      //                                                                                                                                                                                                                                                                                                                                                                                                   overview:
-      //                                                                                                                                                                                                                                                                                                                                                                                                           "A cozy café-inspired eCommerce + digital library concept designed for calm browsing, longer sessions, and exploration-first navigation.",
-      //                                                                                                                                                                                                                                                                                                                                                                                                                 slides: [
-      //                                                                                                                                                                                                                                                                                                                                                                                                                         { src: "images/inkspresso/dashboard.png", heading: "Dashboard", caption: "A central hub connecting café + library experiences." },
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                 { src: "images/inkspresso/menu.jpg", heading: "Café Menu", caption: "Warm browsing that doesn’t feel pushy or loud." },
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                         { src: "images/inkspresso/library.png", heading: "Library", caption: "Exploration-first book discovery." },
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                               ],
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                     caseStudy: {
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                             problem:
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "Many eCommerce experiences are aggressive and dense, turning browsing into pressure. Users who want a cozy experience need calmer hierarchy and clearer exploration paths.",
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                               goals: ["Create an inviting browsing experience", "Separate exploration from purchase pressure", "Support long-form discovery"],
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       decisions: ["Café vs library modes", "Dark-mode-friendly UI", "Exploration-first hierarchy"],
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               reflection:
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "Next steps: test navigation labels, improve filtering, and refine checkout microcopy to reduce friction without increasing pressure.",
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               },
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   },
-      //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     };
+  },
+};
 
   const renderCaseStudyHTML = (project) => `
     <h4>Overview</h4>
