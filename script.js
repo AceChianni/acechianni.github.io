@@ -146,8 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "A neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload through gentle structure, emotional check-ins, and low-pressure interaction patterns.",
 
     slides: [
-      { src: "images/inkspression/landing.jpg", heading: "Dashboard", caption: "A calm home base prioritizing emotional state, recent entries, and one clear next action." },
-      { src: "images/inkspression/dash.jpg", heading: "Themes", caption: "Sensory-aware themes that adapt to emotional and cognitive needs." },
+      { src: "images/inkspression/landing.jpg", heading: "Landing", caption: "A simple landing page allowing users to view the app before creating an account." },
+      { src: "images/inkspression/dash.jpg", heading: "Dashboard", caption: "A calm home base prioritizing emotional state, recent entries, and one clear next action." },
+      { src: "images/inkspression/signin.jpg", heading: "Account", caption: "User log in/sign up form to track logs" },
       { src: "images/inkspression/entry.jpg", heading: "Journal Entry", caption: "A distraction-free writing space designed for emotional safety and focus." },
     ],
 
