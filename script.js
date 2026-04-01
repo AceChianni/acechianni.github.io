@@ -139,47 +139,70 @@ document.addEventListener("DOMContentLoaded", () => {
   // PROJECT DATA 
   const projects = {
   inkspression: {
-    title: "Inkspression",
-    meta: "Role: UX/UI, IA, Interaction Design · Tools: React · TailwindCSS · Firebase",
+  title: "Inkspression",
 
-    overview:
-      "A neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload through gentle structure, emotional check-ins, and low-pressure interaction patterns.",
+  meta:
+    "Role: UX/UI Design, Information Architecture, Interaction Design, Front-End Development · Tools: React · Tailwind CSS · Firebase",
 
-    slides: [
-      { src: "images/inkspression/landing.jpg", heading: "Landing", caption: "A simple landing page allowing users to view the app before creating an account." },
-      { src: "images/inkspression/dash.jpg", heading: "Dashboard", caption: "A calm home base prioritizing emotional state, recent entries, and one clear next action." },
-      { src: "images/inkspression/signin.jpg", heading: "Account", caption: "User log in/sign up form to track logs" },
-      { src: "images/inkspression/entry.jpg", heading: "Journal Entry", caption: "A distraction-free writing space designed for emotional safety and focus." },
+  overview:
+    "A neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload through gentle structure, emotional check-ins, and low-pressure interaction patterns. Inkspression reimagines traditional journaling tools by removing performance-based mechanics and prioritizing emotional safety, ease of use, and return-friendly design.",
+
+  slides: [
+    {
+      src: "images/inkspression/landing.jpg",
+      heading: "Landing",
+      caption:
+        "A soft-entry landing experience that allows users to explore the app before committing, reducing friction and decision pressure.",
+    },
+    {
+      src: "images/inkspression/dash.jpg",
+      heading: "Dashboard",
+      caption:
+        "A calm home base prioritizing emotional state, recent entries, and one clear next action to reduce decision fatigue.",
+    },
+    {
+      src: "images/inkspression/signin.jpg",
+      heading: "Account",
+      caption:
+        "A minimal, accessible authentication flow designed to feel optional and low-pressure rather than required.",
+    },
+    {
+      src: "images/inkspression/entry.jpg",
+      heading: "Journal Entry",
+      caption:
+        "A distraction-free writing space focused on emotional safety, minimal UI, and gentle prompts to support reflection.",
+    },
+  ],
+
+  caseStudy: {
+    problem:
+      "Many journaling and productivity tools rely on streaks, gamification, and dense dashboards that unintentionally increase anxiety. For users prone to overwhelm, these systems create pressure instead of support—making it harder to begin and harder to return.",
+
+    insight:
+      "Research through community discussions and informal user interviews revealed a consistent pattern: neurodivergent users often abandon journaling tools due to visual clutter, performance pressure, and rigid structures that fail to adapt to fluctuating energy and emotional states.",
+
+    goals: [
+      "Reduce cognitive load during reflection",
+      "Support emotional regulation over performance tracking",
+      "Enable personalization without increasing complexity",
+      "Maintain strong accessibility across light and dark themes",
     ],
 
-    caseStudy: {
-       problem:
-    "Many journaling and productivity tools rely on streaks, gamification, and dense dashboards that unintentionally increase anxiety. For users prone to overwhelm, these systems create pressure instead of support—making it harder to begin and harder to return.",
+    decisions: [
+      "Low-density layouts and generous spacing to reduce sensory load and visual overwhelm",
+      "Emotion-led entry points (mood selection) to gently guide reflection without forcing structure",
+      "Removal of streaks, metrics, and punitive language to reduce shame-based disengagement",
+      "One primary action per screen to improve clarity and reduce decision fatigue",
+      "Theme personalization designed for emotional regulation rather than aesthetic overload",
+    ],
 
-  insight:
-    "Community discussions and informal user interviews showed a consistent pattern: neurodivergent users often abandon journaling apps due to visual clutter, pressure mechanics, and rigid structures that don’t adapt to fluctuating energy or emotional states.",
+    impact:
+      "The experience reduces friction at the moment of starting, supports emotional expression without pressure, and encourages repeat use by making the product feel safe, forgiving, and adaptable to real-life energy levels.",
 
-  goals: [
-    "Reduce cognitive load during reflection",
-    "Support emotional regulation rather than performance",
-    "Allow customization without complexity",
-    "Maintain strong accessibility across themes",
-  ],
-
-  decisions: [
-    "Low-density layouts and generous spacing to reduce sensory load",
-    "Theme personalization tied to emotional states to support regulation and autonomy",
-    "Removal of streaks and punitive language to reduce shame-based drop-off",
-    "One primary action per screen to improve clarity and reduce decision fatigue",
-  ],
-
-  impact:
-    "Designed to reduce friction at the moment of starting a journaling session and increase repeat use by making the experience feel safe, forgiving, and non-performative.",
-
-  reflection:
-    "Next iterations include usability testing with neurodivergent users, onboarding under 60 seconds, and adaptive UI that responds to emotional check-ins by adjusting layout density, prompts, and visual intensity.",
-},
+    reflection:
+      "Future iterations will include usability testing with neurodivergent users, reducing onboarding time to under 60 seconds, and exploring adaptive UI patterns that respond to emotional check-ins by adjusting layout density, prompts, and visual intensity.",
   },
+},
 
   anniime: {
     title: "Anniime Finder",
