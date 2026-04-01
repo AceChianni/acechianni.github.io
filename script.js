@@ -145,104 +145,132 @@ document.addEventListener("DOMContentLoaded", () => {
     "Role: UX/UI Design, Information Architecture, Interaction Design, Front-End Development · Tools: React · Tailwind CSS · Firebase",
 
   overview:
-    "A neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload through gentle structure, emotional check-ins, and low-pressure interaction patterns. Inkspression reimagines traditional journaling tools by removing performance-based mechanics and prioritizing emotional safety, ease of use, and return-friendly design.",
+    "Inkspression is a neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload and make reflection easier to begin and return to. Unlike traditional tools, it removes streaks, gamification, and high-density dashboards in favor of gentle structure, emotional check-ins, and low-pressure interaction patterns.",
 
   slides: [
     {
       src: "images/inkspression/landing.jpg",
       heading: "Landing",
       caption:
-        "A soft-entry landing experience that allows users to explore the app before committing, reducing friction and decision pressure.",
+        "A low-friction entry point that allows users to explore the product before committing, reducing signup pressure.",
     },
     {
       src: "images/inkspression/dash.jpg",
       heading: "Dashboard",
       caption:
-        "A calm home base prioritizing emotional state, recent entries, and one clear next action to reduce decision fatigue.",
+        "A simplified home screen focused on emotional state, recent entries, and one clear next step.",
     },
     {
       src: "images/inkspression/signin.jpg",
       heading: "Account",
       caption:
-        "A minimal, accessible authentication flow designed to feel optional and low-pressure rather than required.",
+        "A minimal authentication flow designed to feel optional and non-disruptive.",
     },
     {
       src: "images/inkspression/entry.jpg",
       heading: "Journal Entry",
       caption:
-        "A distraction-free writing space focused on emotional safety, minimal UI, and gentle prompts to support reflection.",
+        "A distraction-free writing environment with mood-led prompts and reduced visual noise.",
     },
   ],
 
   caseStudy: {
     problem:
-      "Many journaling and productivity tools rely on streaks, gamification, and dense dashboards that unintentionally increase anxiety. For users prone to overwhelm, these systems create pressure instead of support—making it harder to begin and harder to return.",
+      "Most journaling and productivity tools rely on streaks, gamification, and dense interfaces. For users prone to overwhelm or inconsistent energy, these systems increase pressure and lead to abandonment rather than engagement.",
 
     insight:
-      "Research through community discussions and informal user interviews revealed a consistent pattern: neurodivergent users often abandon journaling tools due to visual clutter, performance pressure, and rigid structures that fail to adapt to fluctuating energy and emotional states.",
+      "Through community discussions and informal user interviews, I found that many neurodivergent users avoid or quit journaling apps due to visual clutter, rigid workflows, and performance-based mechanics that don’t reflect how their energy and focus fluctuate.",
 
     goals: [
-      "Reduce cognitive load during reflection",
-      "Support emotional regulation over performance tracking",
-      "Enable personalization without increasing complexity",
-      "Maintain strong accessibility across light and dark themes",
+      "Make it easier to start and return to journaling",
+      "Reduce cognitive load and visual overwhelm",
+      "Support emotional regulation instead of performance tracking",
+      "Provide personalization without adding complexity",
+      "Maintain strong accessibility across themes",
     ],
 
     decisions: [
-      "Low-density layouts and generous spacing to reduce sensory load and visual overwhelm",
-      "Emotion-led entry points (mood selection) to gently guide reflection without forcing structure",
-      "Removal of streaks, metrics, and punitive language to reduce shame-based disengagement",
-      "One primary action per screen to improve clarity and reduce decision fatigue",
-      "Theme personalization designed for emotional regulation rather than aesthetic overload",
+      "Designed low-density layouts with clear spacing to reduce sensory overload",
+      "Introduced mood-first interaction to guide users into reflection without requiring structure",
+      "Removed streaks and metrics to eliminate shame-based disengagement",
+      "Limited each screen to one primary action to reduce decision fatigue",
+      "Built a simple theming system that supports personalization without overwhelming users",
     ],
 
     impact:
-      "The experience reduces friction at the moment of starting, supports emotional expression without pressure, and encourages repeat use by making the product feel safe, forgiving, and adaptable to real-life energy levels.",
+      "The result is a journaling experience that reduces friction at the moment of starting and supports repeat use by feeling safe, flexible, and aligned with real-world energy levels rather than idealized consistency.",
 
     reflection:
-      "Future iterations will include usability testing with neurodivergent users, reducing onboarding time to under 60 seconds, and exploring adaptive UI patterns that respond to emotional check-ins by adjusting layout density, prompts, and visual intensity.",
+      "Next steps include usability testing with neurodivergent users, optimizing onboarding to under 60 seconds, and exploring adaptive UI patterns that respond to emotional input by adjusting layout density, prompts, and visual intensity.",
   },
 },
 
-  anniime: {
-    title: "Anniime Finder",
-    meta: "Role: UX/Product Designer + Front-End Developer · Tools: React · JavaScript · Jikan API",
+kidsHub: {
+  title: "Kids Hub",
 
-    overview:
-      "A guided anime discovery tool that helps new viewers find shows quickly without decision fatigue.",
+  meta:
+    "Role: UX/UI Design, Information Architecture, Interaction Design, Concept Product · Tools: Figma, React, Tailwind CSS",
 
-    slides: [
-      { src: "images/anniime/home-light.jpg", heading: "Landing", caption: "A welcoming entry point designed for first-time anime viewers." },
-      { src: "images/anniime/quiz-dark.jpg", heading: "Quiz", caption: "Preference-based onboarding converts taste into recommendations." },
-      { src: "images/anniime/search-dark.jpg", heading: "Results", caption: "Grouped results for fast scanning and low-pressure selection." },
+  overview:
+    "Kids Hub is a neurodivergent-friendly routine and emotional regulation tool designed for children and caregivers. The concept focuses on reducing friction around transitions, daily structure, and task completion by using calm visuals, predictable flows, and low-pressure support patterns.",
+
+  slides: [
+    {
+      src: "images/kidshub/home.jpg",
+      heading: "Home",
+      caption:
+        "A simplified home screen designed to guide children and caregivers toward the next clear action without visual overload.",
+    },
+    {
+      src: "images/kidshub/routines.jpg",
+      heading: "Routines",
+      caption:
+        "A predictable routine view that breaks tasks into manageable steps and supports smoother transitions throughout the day.",
+    },
+    {
+      src: "images/kidshub/calm-corner.jpg",
+      heading: "Calm Corner",
+      caption:
+        "A regulation-focused space intended to help children pause, reset, and re-engage without shame or punishment.",
+    },
+    {
+      src: "images/kidshub/rewards.jpg",
+      heading: "Rewards",
+      caption:
+        "A gentle encouragement system designed to reinforce progress without relying on pressure-heavy gamification.",
+    },
+  ],
+
+  caseStudy: {
+    problem:
+      "Many routine and behavior apps for children rely on overstimulating visuals, rigid task systems, or reward structures that create pressure rather than support. For neurodivergent children and overwhelmed caregivers, these tools can make daily transitions and routines harder instead of easier.",
+
+    insight:
+      "The core opportunity was to design a tool that supports regulation before compliance. Children often need clarity, predictability, and emotional safety in order to move through routines successfully, while caregivers need an interface that feels supportive rather than demanding.",
+
+    goals: [
+      "Reduce friction around routines and transitions",
+      "Support emotional regulation alongside task completion",
+      "Design for both caregiver clarity and child usability",
+      "Use low-stimulation visuals and predictable interaction patterns",
+      "Create encouragement without shame, punishment, or overwhelming gamification",
     ],
 
-    caseStudy: {
-      problem:
-        "New anime viewers face analysis paralysis due to massive catalogs, niche genre labels, and community recommendations that assume prior knowledge.",
+    decisions: [
+      "Structured the experience around clear, single-purpose sections such as routines, transitions, calm support, and rewards",
+      "Used low-density layouts, large tap targets, and simple language to reduce cognitive strain for children",
+      "Designed predictable navigation and repeated interaction patterns to build familiarity and trust",
+      "Included a Calm Corner concept to prioritize emotional regulation as part of the product experience",
+      "Framed rewards as gentle encouragement rather than performance pressure, avoiding punitive or shame-based UX",
+    ],
 
-      insight:
-        "Beginner viewers often spend more time searching than watching, leading to drop-off before starting a series.",
+    impact:
+      "Kids Hub demonstrates how thoughtful UX can support both regulation and routine-building by designing for real emotional and cognitive needs. The concept reframes productivity for children as a supportive, adaptive experience rather than a strict behavior system.",
 
-      goals: [
-        "Reduce time-to-first-watch decision",
-        "Create a friendly onboarding experience",
-        "Present results in a digestible format",
-      ],
-
-      decisions: [
-        "Quiz-based onboarding instead of open search",
-        "Clear grouping and minimal UI noise",
-        "Light/dark modes for comfort and accessibility",
-      ],
-
-      impact:
-        "Designed to reduce decision time from 20+ minutes of browsing to a few guided steps.",
-
-      reflection:
-        "Next steps include explainable recommendations ('Why this match?') and personalization memory for returning users.",
-    },
+    reflection:
+      "Next steps include expanding the caregiver-child flow, testing navigation clarity with families, refining age-appropriate interaction patterns, and validating whether the calm-support features meaningfully improve transitions and routine completion.",
   },
+},
 
   inkspresso: {
     title: "Inkspresso — Fuel Your Imagination",
@@ -283,7 +311,49 @@ document.addEventListener("DOMContentLoaded", () => {
         "Future improvements include navigation testing, refined filtering, and checkout microcopy that reduces friction without adding urgency.",
     },
   },
+
+  anniime: {
+    title: "Anniime Finder",
+    meta: "Role: UX/Product Designer + Front-End Developer · Tools: React · JavaScript · Jikan API",
+
+    overview:
+      "A guided anime discovery tool that helps new viewers find shows quickly without decision fatigue.",
+
+    slides: [
+      { src: "images/anniime/home-light.jpg", heading: "Landing", caption: "A welcoming entry point designed for first-time anime viewers." },
+      { src: "images/anniime/quiz-dark.jpg", heading: "Quiz", caption: "Preference-based onboarding converts taste into recommendations." },
+      { src: "images/anniime/search-dark.jpg", heading: "Results", caption: "Grouped results for fast scanning and low-pressure selection." },
+    ],
+
+    caseStudy: {
+      problem:
+        "New anime viewers face analysis paralysis due to massive catalogs, niche genre labels, and community recommendations that assume prior knowledge.",
+
+      insight:
+        "Beginner viewers often spend more time searching than watching, leading to drop-off before starting a series.",
+
+      goals: [
+        "Reduce time-to-first-watch decision",
+        "Create a friendly onboarding experience",
+        "Present results in a digestible format",
+      ],
+
+      decisions: [
+        "Quiz-based onboarding instead of open search",
+        "Clear grouping and minimal UI noise",
+        "Light/dark modes for comfort and accessibility",
+      ],
+
+      impact:
+        "Designed to reduce decision time from 20+ minutes of browsing to a few guided steps.",
+
+      reflection:
+        "Next steps include explainable recommendations ('Why this match?') and personalization memory for returning users.",
+    },
+  },
 };
+
+
 
   const renderCaseStudyHTML = (project) => `
     <h4>Overview</h4>
