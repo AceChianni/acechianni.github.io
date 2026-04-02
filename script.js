@@ -174,101 +174,186 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ],
 
-  caseStudy: {
-    problem:
-      "Most journaling and productivity tools rely on streaks, gamification, and dense interfaces. For users prone to overwhelm or inconsistent energy, these systems increase pressure and lead to abandonment rather than engagement.",
-
-    insight:
-      "Through community discussions and informal user interviews, I found that many neurodivergent users avoid or quit journaling apps due to visual clutter, rigid workflows, and performance-based mechanics that don’t reflect how their energy and focus fluctuate.",
-
-    goals: [
-      "Make it easier to start and return to journaling",
-      "Reduce cognitive load and visual overwhelm",
-      "Support emotional regulation instead of performance tracking",
-      "Provide personalization without adding complexity",
-      "Maintain strong accessibility across themes",
-    ],
-
-    decisions: [
-      "Designed low-density layouts with clear spacing to reduce sensory overload",
-      "Introduced mood-first interaction to guide users into reflection without requiring structure",
-      "Removed streaks and metrics to eliminate shame-based disengagement",
-      "Limited each screen to one primary action to reduce decision fatigue",
-      "Built a simple theming system that supports personalization without overwhelming users",
-    ],
-
-    impact:
-      "The result is a journaling experience that reduces friction at the moment of starting and supports repeat use by feeling safe, flexible, and aligned with real-world energy levels rather than idealized consistency.",
-
-    reflection:
-      "Next steps include usability testing with neurodivergent users, optimizing onboarding to under 60 seconds, and exploring adaptive UI patterns that respond to emotional input by adjusting layout density, prompts, and visual intensity.",
-  },
-},
-
-kidsHub: {
-  title: "Kids Hub",
+  kidsHub: {
+  title: "Kids Hub: Neurodivergent Routine & Regulation Support",
 
   meta:
     "Role: UX/UI Design, Information Architecture, Interaction Design, Concept Product · Tools: Figma, React, Tailwind CSS",
 
   overview:
-    "Kids Hub is a neurodivergent-friendly routine and emotional regulation tool designed for children and caregivers. The concept focuses on reducing friction around transitions, daily structure, and task completion by using calm visuals, predictable flows, and low-pressure support patterns.",
+    "Kids Hub is a neurodivergent-friendly routine and emotional regulation tool designed for children and caregivers. The product focuses on reducing friction around transitions, daily structure, and emotional check-ins through calm visuals, predictable flows, and low-pressure support patterns. It is designed to support real-life moments of overwhelm rather than idealized behavior.",
 
   slides: [
     {
       src: "images/kidshub/home.jpg",
       heading: "Home",
       caption:
-        "A simplified home screen designed to guide children and caregivers toward the next clear action without visual overload.",
+        "A simplified home screen that guides users toward one clear next step, reducing decision fatigue and visual overwhelm.",
     },
     {
-      src: "images/kidshub/routines.jpg",
-      heading: "Routines",
+      src: "images/kidshub/home-calm.jpg",
+      heading: "Low Stimulation Mode",
       caption:
-        "A predictable routine view that breaks tasks into manageable steps and supports smoother transitions throughout the day.",
+        "An alternate interface that reduces visual intensity, supporting children who are sensitive to motion, contrast, or dense layouts.",
     },
     {
-      src: "images/kidshub/calm-corner.jpg",
+      src: "images/kidshub/morning.jpg",
+      heading: "Morning Routine",
+      caption:
+        "A structured routine experience that breaks tasks into manageable steps, helping children transition with clarity and reduced resistance.",
+    },
+    {
+      src: "images/kidshub/calmcorner.jpg",
       heading: "Calm Corner",
       caption:
-        "A regulation-focused space intended to help children pause, reset, and re-engage without shame or punishment.",
+        "A guided regulation flow that helps children identify how they feel, choose a reset strategy, and re-engage without shame.",
     },
     {
-      src: "images/kidshub/rewards.jpg",
+      src: "images/kidshub/reward.jpg",
       heading: "Rewards",
       caption:
-        "A gentle encouragement system designed to reinforce progress without relying on pressure-heavy gamification.",
+        "A gentle reinforcement system that celebrates effort without introducing pressure, streaks, or performance-based tracking.",
     },
   ],
 
   caseStudy: {
+    why:
+      "Transitions, emotional regulation, and daily routines can be some of the most difficult moments for neurodivergent children and their caregivers. Many existing tools unintentionally increase overwhelm instead of reducing it. Kids Hub explores how digital products can support these moments with calm, flexible, and emotionally aware design.",
+
     problem:
-      "Many routine and behavior apps for children rely on overstimulating visuals, rigid task systems, or reward structures that create pressure rather than support. For neurodivergent children and overwhelmed caregivers, these tools can make daily transitions and routines harder instead of easier.",
+      "Many tools designed for children rely on rigid routines, overstimulating interfaces, or pressure-based reward systems. For neurodivergent children, these patterns can increase resistance, emotional escalation, and difficulty completing even simple transitions.",
 
     insight:
-      "The core opportunity was to design a tool that supports regulation before compliance. Children often need clarity, predictability, and emotional safety in order to move through routines successfully, while caregivers need an interface that feels supportive rather than demanding.",
+      "Emotional state directly impacts a child’s ability to complete tasks. Tools that ignore this often fail. Caregivers also need support that guides without escalating situations or introducing additional stress.",
 
     goals: [
-      "Reduce friction around routines and transitions",
-      "Support emotional regulation alongside task completion",
-      "Design for both caregiver clarity and child usability",
-      "Use low-stimulation visuals and predictable interaction patterns",
-      "Create encouragement without shame, punishment, or overwhelming gamification",
+      "Reduce friction around daily routines and transitions",
+      "Support emotional regulation in real time",
+      "Design low-stimulation, predictable interaction patterns",
+      "Remove pressure-based motivation systems",
+      "Create a shared experience for both children and caregivers",
+    ],
+
+    principles: [
+      "One clear action per screen to reduce decision fatigue",
+      "Low-density layouts to minimize sensory overload",
+      "No shame-based mechanics (no streaks, no penalties)",
+      "Meet emotional state before task completion",
+      "Allow flexibility and recovery (reset, deselect, no forced flow)",
     ],
 
     decisions: [
-      "Structured the experience around clear, single-purpose sections such as routines, transitions, calm support, and rewards",
-      "Used low-density layouts, large tap targets, and simple language to reduce cognitive strain for children",
-      "Designed predictable navigation and repeated interaction patterns to build familiarity and trust",
-      "Included a Calm Corner concept to prioritize emotional regulation as part of the product experience",
-      "Framed rewards as gentle encouragement rather than performance pressure, avoiding punitive or shame-based UX",
+      "Introduced mood-first interaction to meet the child where they are before suggesting actions",
+      "Structured flows as guided steps rather than open navigation",
+      "Designed low-density layouts to reduce sensory overload",
+      "Allowed flexible interaction (deselect, reset, no forced completion)",
+      "Reframed rewards as encouragement rather than performance tracking",
+      "Created a parent view with scripts to support co-regulation",
     ],
 
+    highlight:
+      "The Calm Corner feature introduces a mood-first interaction model, guiding children to identify how they feel before suggesting a reset. This reduces resistance and supports co-regulation between child and caregiver.",
+
+    scenario:
+      "For example, during a morning transition, a child who feels overwhelmed can select their mood, choose a reset, and return to their routine with less escalation. Caregivers are supported with scripts that help maintain a calm interaction.",
+
     impact:
-      "Kids Hub demonstrates how thoughtful UX can support both regulation and routine-building by designing for real emotional and cognitive needs. The concept reframes productivity for children as a supportive, adaptive experience rather than a strict behavior system.",
+      "By prioritizing emotional state, reducing cognitive load, and removing pressure-based systems, Kids Hub creates a calmer interaction loop. This supports smoother transitions, reduces resistance, and helps children re-engage more independently.",
 
     reflection:
-      "Next steps include expanding the caregiver-child flow, testing navigation clarity with families, refining age-appropriate interaction patterns, and validating whether the calm-support features meaningfully improve transitions and routine completion.",
+      "Future iterations will introduce linked parent-child accounts, secure tracking of moods and routines, and exportable summaries to support communication with therapists, doctors, and care teams. The long-term goal is to evolve Kids Hub into a collaborative support system rather than a standalone tool.",
+  },
+},
+},
+
+kidsHub: {
+  title: "Kids Hub: Neurodivergent Routine & Regulation Support",
+
+  meta:
+    "Role: UX/UI Design, Information Architecture, Interaction Design, Concept Product · Tools: Figma, React, Tailwind CSS",
+
+  overview:
+    "Kids Hub is a neurodivergent-friendly routine and emotional regulation tool designed for children and caregivers. The product focuses on reducing friction around transitions, daily structure, and emotional check-ins through calm visuals, predictable flows, and low-pressure support patterns. It is designed to support real-life moments of overwhelm rather than idealized behavior.",
+
+  slides: [
+    {
+      src: "images/kidshub/home.jpg",
+      heading: "Home",
+      caption:
+        "A simplified home screen that guides users toward one clear next step, reducing decision fatigue and visual overwhelm.",
+    },
+    {
+      src: "images/kidshub/home-calm.jpg",
+      heading: "Low Stimulation Mode",
+      caption:
+        "An alternate interface that reduces visual intensity, supporting children who are sensitive to motion, contrast, or dense layouts.",
+    },
+    {
+      src: "images/kidshub/morning.jpg",
+      heading: "Morning Routine",
+      caption:
+        "A structured routine experience that breaks tasks into manageable steps, helping children transition with clarity and reduced resistance.",
+    },
+    {
+      src: "images/kidshub/calmcorner.jpg",
+      heading: "Calm Corner",
+      caption:
+        "A guided regulation flow that helps children identify how they feel, choose a reset strategy, and re-engage without shame.",
+    },
+    {
+      src: "images/kidshub/reward.jpg",
+      heading: "Rewards",
+      caption:
+        "A gentle reinforcement system that celebrates effort without introducing pressure, streaks, or performance-based tracking.",
+    },
+  ],
+
+  caseStudy: {
+    why:
+      "Transitions, emotional regulation, and daily routines can be some of the most difficult moments for neurodivergent children and their caregivers. Many existing tools unintentionally increase overwhelm instead of reducing it. Kids Hub explores how digital products can support these moments with calm, flexible, and emotionally aware design.",
+
+    problem:
+      "Many tools designed for children rely on rigid routines, overstimulating interfaces, or pressure-based reward systems. For neurodivergent children, these patterns can increase resistance, emotional escalation, and difficulty completing even simple transitions.",
+
+    insight:
+      "Emotional state directly impacts a child’s ability to complete tasks. Tools that ignore this often fail. Caregivers also need support that guides without escalating situations or introducing additional stress.",
+
+    goals: [
+      "Reduce friction around daily routines and transitions",
+      "Support emotional regulation in real time",
+      "Design low-stimulation, predictable interaction patterns",
+      "Remove pressure-based motivation systems",
+      "Create a shared experience for both children and caregivers",
+    ],
+
+    principles: [
+      "One clear action per screen to reduce decision fatigue",
+      "Low-density layouts to minimize sensory overload",
+      "No shame-based mechanics (no streaks, no penalties)",
+      "Meet emotional state before task completion",
+      "Allow flexibility and recovery (reset, deselect, no forced flow)",
+    ],
+
+    decisions: [
+      "Introduced mood-first interaction to meet the child where they are before suggesting actions",
+      "Structured flows as guided steps rather than open navigation",
+      "Designed low-density layouts to reduce sensory overload",
+      "Allowed flexible interaction (deselect, reset, no forced completion)",
+      "Reframed rewards as encouragement rather than performance tracking",
+      "Created a parent view with scripts to support co-regulation",
+    ],
+
+    highlight:
+      "The Calm Corner feature introduces a mood-first interaction model, guiding children to identify how they feel before suggesting a reset. This reduces resistance and supports co-regulation between child and caregiver.",
+
+    scenario:
+      "For example, during a morning transition, a child who feels overwhelmed can select their mood, choose a reset, and return to their routine with less escalation. Caregivers are supported with scripts that help maintain a calm interaction.",
+
+    impact:
+      "By prioritizing emotional state, reducing cognitive load, and removing pressure-based systems, Kids Hub creates a calmer interaction loop. This supports smoother transitions, reduces resistance, and helps children re-engage more independently.",
+
+    reflection:
+      "Future iterations will introduce linked parent-child accounts, secure tracking of moods and routines, and exportable summaries to support communication with therapists, doctors, and care teams. The long-term goal is to evolve Kids Hub into a collaborative support system rather than a standalone tool.",
   },
 },
 
@@ -398,21 +483,21 @@ kidsHub: {
     </div>
   `;
 
-  const buildPlaceholderSlide = (projectKey, slideIndex, isActive) => `
-    <div class="carousel-item ${isActive ? "active" : ""}">
-      <div class="modal-placeholder">
-        <div class="modal-placeholder-inner">
-          <div class="modal-placeholder-title">Image placeholder</div>
-          <div class="modal-placeholder-sub">Add a future screenshot/mockup when ready.</div>
-          <code class="modal-placeholder-code">images/${projectKey}/your-image-${slideIndex + 1}.jpg</code>
-        </div>
-      </div>
-      <div class="carousel-caption">
-        <h5>Coming Soon</h5>
-        <p>Add a slide image + caption in your project data.</p>
-      </div>
-    </div>
-  `;
+  // const buildPlaceholderSlide = (projectKey, slideIndex, isActive) => `
+  //   <div class="carousel-item ${isActive ? "active" : ""}">
+  //     <div class="modal-placeholder">
+  //       <div class="modal-placeholder-inner">
+  //         <div class="modal-placeholder-title">Image placeholder</div>
+  //         <div class="modal-placeholder-sub">Add a future screenshot/mockup when ready.</div>
+  //         <code class="modal-placeholder-code">images/${projectKey}/your-image-${slideIndex + 1}.jpg</code>
+  //       </div>
+  //     </div>
+  //     <div class="carousel-caption">
+  //       <h5>Coming Soon</h5>
+  //       <p>Add a slide image + caption in your project data.</p>
+  //     </div>
+  //   </div>
+  // `;
 
   const getCarouselInstance = () => {
     if (!window.bootstrap) return null;
