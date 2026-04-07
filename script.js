@@ -123,150 +123,174 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projects = {
     inkspression: {
-      title: "Inkspression",
-      meta:
-        "Role: UX/UI Design, Information Architecture, Interaction Design, Front-End Development · Tools: React · Tailwind CSS · Firebase",
-      overview:
-        "Inkspression is a neurodivergent-friendly journaling and productivity platform designed to reduce cognitive overload and make reflection easier to begin and return to. Unlike traditional tools, it removes streaks, gamification, and high-density dashboards in favor of gentle structure, emotional check-ins, and low-pressure interaction patterns.",
-      slides: [
-        {
-          src: "images/inkspression/landing.jpg",
-          heading: "Landing",
-          caption:
-            "A low-friction entry point that allows users to explore the product before committing, reducing signup pressure.",
-        },
-        {
-          src: "images/inkspression/dash.jpg",
-          heading: "Dashboard",
-          caption:
-            "A simplified home screen focused on emotional state, recent entries, and one clear next step.",
-        },
-        {
-          src: "images/inkspression/signin.jpg",
-          heading: "Account",
-          caption:
-            "A minimal authentication flow designed to feel optional and non-disruptive.",
-        },
-        {
-          src: "images/inkspression/entry.jpg",
-          heading: "Journal Entry",
-          caption:
-            "A distraction-free writing environment with mood-led prompts and reduced visual noise.",
-        },
-      ],
-      caseStudy: {
-        why:
-          "Many people want to journal or reflect but struggle to start or stay consistent due to overwhelm, pressure, or rigid productivity systems. Inkspression explores how a journaling tool can feel safe, flexible, and aligned with real human energy rather than idealized habits.",
-        problem:
-          "Most journaling and productivity tools rely on streaks, gamification, and dense interfaces. For users prone to overwhelm or inconsistent energy, these systems increase pressure and lead to abandonment rather than engagement.",
-        insight:
-          "Through community discussions and informal user interviews, I found that many neurodivergent users avoid or quit journaling apps due to visual clutter, rigid workflows, and performance-based mechanics that don’t reflect how their energy and focus fluctuate.",
-        goals: [
-          "Make it easier to start and return to journaling",
-          "Reduce cognitive load and visual overwhelm",
-          "Support emotional regulation instead of performance tracking",
-          "Provide personalization without adding complexity",
-          "Maintain strong accessibility across themes",
-        ],
-        principles: [
-          "Reduce friction at the moment of starting",
-          "One clear action per screen",
-          "No pressure, no streaks, no shame loops",
-          "Support fluctuating energy levels",
-          "Keep interactions calm, simple, and forgiving",
-        ],
-        decisions: [
-          "Designed low-density layouts with clear spacing to reduce sensory overload",
-          "Introduced mood-first interaction to guide users into reflection without requiring structure",
-          "Removed streaks and metrics to eliminate shame-based disengagement",
-          "Limited each screen to one primary action to reduce decision fatigue",
-          "Built a simple theming system that supports personalization without overwhelming users",
-        ],
-        impact:
-          "The result is a journaling experience that reduces friction at the moment of starting and supports repeat use by aligning with real-world energy levels rather than idealized consistency. Users can engage without pressure, making the tool feel safe to return to even after periods of inactivity.",
-        reflection:
-          "Next steps include usability testing with neurodivergent users, refining onboarding to reduce time-to-first-entry, and exploring adaptive UI patterns that respond to emotional input by adjusting layout density, prompts, and visual intensity.",
-      },
-    },
+  title: "Inkspression",
+  meta:
+    "Role: End-to-end Product Design (Research, UX, UI, Front-End Development) · Tools: React · Tailwind CSS · Firebase",
 
-    kidsHub: {
-      title: "Kids Hub: Neurodivergent Routine & Regulation Support",
-      meta:
-        "Role: UX/UI Design, Information Architecture, Interaction Design, Concept Product · Tools: Figma, React, Tailwind CSS",
-      overview:
-        "Kids Hub is a neurodivergent-friendly routine and emotional regulation tool designed for children and caregivers. The product focuses on reducing friction around transitions, daily structure, and emotional check-ins through calm visuals, predictable flows, and low-pressure support patterns. It is designed to support real-life moments of overwhelm rather than idealized behavior.",
-      slides: [
-        {
-          src: "images/kidshub/home.jpg",
-          heading: "Home",
-          caption:
-            "A simplified home screen that guides users toward one clear next step, reducing decision fatigue and visual overwhelm.",
-        },
-        {
-          src: "images/kidshub/home-calm.jpg",
-          heading: "Low Stimulation Mode",
-          caption:
-            "An alternate interface that reduces visual intensity, supporting children who are sensitive to motion, contrast, or dense layouts.",
-        },
-        {
-          src: "images/kidshub/morning.jpg",
-          heading: "Morning Routine",
-          caption:
-            "A structured routine experience that breaks tasks into manageable steps, helping children transition with clarity and reduced resistance.",
-        },
-        {
-          src: "images/kidshub/calmcorner.jpg",
-          heading: "Calm Corner",
-          caption:
-            "A guided regulation flow that helps children identify how they feel, choose a reset strategy, and re-engage without shame.",
-        },
-        {
-          src: "images/kidshub/reward.jpg",
-          heading: "Rewards",
-          caption:
-            "A gentle reinforcement system that celebrates effort without introducing pressure, streaks, or performance-based tracking.",
-        },
-      ],
-      caseStudy: {
-        why:
-          "Transitions, emotional regulation, and daily routines can be some of the most difficult moments for neurodivergent children and their caregivers. Many existing tools unintentionally increase overwhelm instead of reducing it. Kids Hub explores how digital products can support these moments with calm, flexible, and emotionally aware design.",
-        problem:
-          "Many tools designed for children rely on rigid routines, overstimulating interfaces, or pressure-based reward systems. For neurodivergent children, these patterns can increase resistance, emotional escalation, and difficulty completing even simple transitions.",
-        insight:
-          "Emotional state directly impacts a child’s ability to complete tasks. Tools that ignore this often fail. Caregivers also need support that guides without escalating situations or introducing additional stress.",
-        goals: [
-          "Reduce friction around daily routines and transitions",
-          "Support emotional regulation in real time",
-          "Design low-stimulation, predictable interaction patterns",
-          "Remove pressure-based motivation systems",
-          "Create a shared experience for both children and caregivers",
-        ],
-        principles: [
-          "One clear action per screen to reduce decision fatigue",
-          "Low-density layouts to minimize sensory overload",
-          "No shame-based mechanics (no streaks, no penalties)",
-          "Meet emotional state before task completion",
-          "Allow flexibility and recovery (reset, deselect, no forced flow)",
-        ],
-        decisions: [
-          "Introduced mood-first interaction to meet the child where they are before suggesting actions",
-          "Structured flows as guided steps rather than open navigation",
-          "Designed low-density layouts to reduce sensory overload",
-          "Allowed flexible interaction (deselect, reset, no forced completion)",
-          "Reframed rewards as encouragement rather than performance tracking",
-          "Created a parent view with scripts to support co-regulation",
-        ],
-        highlight:
-          "The Calm Corner feature introduces a mood-first interaction model, guiding children to identify how they feel before suggesting a reset. This reduces resistance and supports co-regulation between child and caregiver.",
-        scenario:
-          "For example, during a morning transition, a child who feels overwhelmed can select their mood, choose a reset, and return to their routine with less escalation. Caregivers are supported with scripts that help maintain a calm interaction.",
-        impact:
-          "By prioritizing emotional state, reducing cognitive load, and removing pressure-based systems, Kids Hub creates a calmer interaction loop. This supports smoother transitions, reduces resistance, and helps children re-engage more independently.",
-        reflection:
-          "Future iterations will introduce linked parent-child accounts, secure tracking of moods and routines, and exportable summaries to support communication with therapists, doctors, and care teams. The long-term goal is to evolve Kids Hub into a collaborative support system rather than a standalone tool.",
-      },
-    },
+  overview:
+    "Inkspression is a journaling and productivity web app designed to reduce cognitive overload by simplifying how users start, navigate, and return to reflection. The product focuses on reducing friction in multi-step user flows through mood-based entry, low-density layouts, and flexible interaction patterns.",
 
+  slides: [
+    {
+      src: "images/inkspression/landing.jpg",
+      heading: "Landing",
+      caption:
+        "Designed a low-friction entry flow that allows users to begin journaling without account creation, reducing onboarding friction and improving task initiation.",
+    },
+    {
+      src: "images/inkspression/dash.jpg",
+      heading: "Dashboard",
+      caption:
+        "A simplified dashboard that prioritizes emotional state, recent activity, and one clear next action to reduce decision fatigue.",
+    },
+    {
+      src: "images/inkspression/signin.jpg",
+      heading: "Account",
+      caption:
+        "A minimal authentication flow designed to feel optional, allowing users to engage before committing to an account.",
+    },
+    {
+      src: "images/inkspression/entry.jpg",
+      heading: "Journal Entry",
+      caption:
+        "A distraction-free writing environment with mood-led prompts and reduced visual noise to support focus and ease of expression.",
+    },
+  ],
+
+  caseStudy: {
+    product:
+      "Product Type: Journaling & productivity web app · Platform: React (web) · Focus: Reducing friction in user flows",
+
+    why:
+      "Many users want to journal or reflect but struggle to start or stay consistent due to overwhelm, pressure, or rigid productivity systems. This project explores how reducing friction at the moment of entry can improve engagement and return behavior.",
+
+    problem:
+      "Traditional journaling and productivity tools rely on dense dashboards, streaks, and performance-based systems. For users with fluctuating energy or attention, these patterns increase pressure and lead to drop-off rather than sustained use.",
+
+    insight:
+      "Users are more likely to engage when the barrier to entry is low and the experience adapts to their current mental or emotional state. Reducing early decision points improves task initiation.",
+
+    goals: [
+      "Improve task initiation by reducing friction at entry",
+      "Reduce cognitive load across core flows",
+      "Support flexible engagement based on user energy",
+      "Create a calm, accessible interaction system",
+    ],
+
+    principles: [
+      "One primary action per screen",
+      "Reduce friction at the moment of starting",
+      "No pressure-based mechanics (no streaks, no shame loops)",
+      "Design for fluctuating attention and energy",
+      "Keep interactions simple and forgiving",
+    ],
+
+    decisions: [
+      "Designed a mood-first entry flow to reduce friction at the start of journaling",
+      "Removed streaks and performance metrics to eliminate pressure-based disengagement",
+      "Structured screens around a single primary action to reduce decision fatigue",
+      "Implemented low-density UI patterns to improve readability and focus",
+      "Created flexible journaling paths based on user energy levels",
+    ],
+
+    impact:
+      "The product reduces friction at the moment of entry and improves task initiation by simplifying early user decisions. By aligning interaction patterns with real-world energy levels, the experience supports repeat use without relying on pressure or habit enforcement.",
+
+    reflection:
+      "Next steps include usability testing to validate entry flow effectiveness, optimizing time-to-first-entry, and exploring adaptive UI patterns that respond dynamically to user input and emotional state.",
+  },
+},
+
+   kidsHub: {
+  title: "Kids Hub: Neurodivergent Routine & Regulation Support",
+  meta:
+    "Role: UX/UI Design, Information Architecture, Interaction Design · Tools: Figma · React · Tailwind CSS",
+
+  overview:
+    "Kids Hub is a routine and emotional regulation tool designed to support children and caregivers during high-stress moments. The product focuses on reducing friction in transitions through guided flows, mood-based interaction, and low-stimulation design patterns.",
+
+  slides: [
+    {
+      src: "images/kidshub/home.jpg",
+      heading: "Home",
+      caption:
+        "A simplified home screen that guides users to one clear next step, reducing decision fatigue during transitions.",
+    },
+    {
+      src: "images/kidshub/home-calm.jpg",
+      heading: "Low Stimulation Mode",
+      caption:
+        "An alternate interface that reduces visual intensity, supporting users sensitive to motion, contrast, or dense layouts.",
+    },
+    {
+      src: "images/kidshub/morning.jpg",
+      heading: "Morning Routine",
+      caption:
+        "A structured routine flow that breaks tasks into manageable steps, improving clarity and reducing resistance.",
+    },
+    {
+      src: "images/kidshub/calmcorner.jpg",
+      heading: "Calm Corner",
+      caption:
+        "A guided emotional regulation flow that helps users identify their state, reset, and re-engage without pressure.",
+    },
+    {
+      src: "images/kidshub/reward.jpg",
+      heading: "Rewards",
+      caption:
+        "A reinforcement system designed to encourage effort without introducing pressure, streaks, or performance tracking.",
+    },
+  ],
+
+  caseStudy: {
+    product:
+      "Product Type: Routine & emotional regulation tool · Users: Children + caregivers · Focus: Reducing friction in transitions",
+
+    why:
+      "Transitions, emotional regulation, and daily routines are often high-friction moments for neurodivergent children and their caregivers. This project explores how design can reduce escalation and support smoother task completion.",
+
+    problem:
+      "Many tools rely on rigid routines or overstimulating interfaces, which increase resistance and emotional escalation rather than supporting completion.",
+
+    insight:
+      "A child’s emotional state directly impacts their ability to complete tasks. Supporting regulation before task execution improves engagement and reduces friction.",
+
+    goals: [
+      "Reduce resistance during transitions",
+      "Support emotional regulation in real time",
+      "Simplify task flows for children and caregivers",
+      "Create predictable, low-stimulation interaction patterns",
+    ],
+
+    principles: [
+      "One clear action per screen",
+      "Low-density layouts to reduce sensory overload",
+      "No pressure-based systems",
+      "Meet emotional state before task completion",
+      "Allow flexibility and recovery (reset, deselect)",
+    ],
+
+    decisions: [
+      "Introduced mood-first navigation to meet users before task engagement",
+      "Designed guided step-by-step flows to reduce cognitive load",
+      "Implemented low-density layouts to minimize sensory overwhelm",
+      "Allowed flexible interaction (reset, deselect, no forced completion)",
+      "Integrated caregiver support tools for co-regulation",
+    ],
+
+    highlight:
+      "The Calm Corner feature introduces a mood-first interaction model that helps users regulate before continuing tasks, reducing resistance and improving re-engagement.",
+
+    scenario:
+      "During a transition, a child can identify their emotional state, select a reset action, and return to their routine with less escalation, while caregivers are supported with structured guidance.",
+
+    impact:
+      "By prioritizing emotional state and simplifying transitions, the product reduces resistance and supports smoother task completion. It enables more independent re-engagement while supporting caregivers in maintaining calm interactions.",
+
+    reflection:
+      "Future iterations will include connected caregiver accounts, progress tracking, and integrations with care providers to support a more collaborative system.",
+  },
+},
     inkspresso: {
       title: "Inkspresso — Fuel Your Imagination",
       meta:
