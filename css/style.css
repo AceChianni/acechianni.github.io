@@ -554,3 +554,157 @@ footer {
     height: 180px;
   }
 }
+
+
+/* ==========================================================
+   HERO TRUST
+========================================================== */
+.hero-trust {
+  margin-top: 1.25rem;
+}
+
+.hero-trust-line {
+  margin: 0 0 0.35rem 0;
+  color: var(--ink-3);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   RESUME PAGE
+========================================================== */
+.resume-page {
+  padding-bottom: 2rem;
+}
+
+.resume-shell {
+  padding: 1.6rem;
+}
+
+.resume-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.resume-name {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.08;
+  margin-bottom: 0.35rem;
+}
+
+.resume-subhead {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: 1rem;
+}
+
+.resume-topbar-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.resume-section {
+  margin-bottom: 1.6rem;
+}
+
+.resume-section:last-child {
+  margin-bottom: 0;
+}
+
+.resume-section-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+  color: var(--ink);
+}
+
+.resume-contact {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.resume-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.resume-item {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(21, 20, 18, 0.08);
+}
+
+.resume-item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.resume-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.55rem;
+}
+
+.resume-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.resume-meta {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: 0.96rem;
+}
+
+.resume-date {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.resume-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.resume-list li {
+  color: var(--ink-2);
+  margin-bottom: 0.55rem;
+  line-height: 1.6;
+}
+
+.resume-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .resume-shell {
+    padding: 1.2rem;
+  }
+
+  .resume-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .resume-item-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-date {
+    white-space: normal;
+  }
+}
