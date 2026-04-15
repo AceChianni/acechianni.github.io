@@ -1,123 +1,156 @@
 /* ==========================================================
-   WEB PROJECTS & UX/UI BUILDS
+   ACCESSIBILITY UTILITIES
+========================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ==========================================================
+   WORK PAGE — Featured Web / Product Cards
 ========================================================== */
 
 .web-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  gap: 1.4rem;
+  align-items: stretch;
 }
 
 .web-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
-  background: rgba(250, 246, 239, 0.86);
-  border: 1px solid rgba(31, 26, 22, 0.12);
-  border-radius: 1rem;
-  box-shadow: 0 10px 24px rgba(31, 26, 22, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .web-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 34px rgba(31, 26, 22, 0.16);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-med);
 }
 
 .web-image {
   position: relative;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: linear-gradient(145deg, rgba(46, 42, 114, 0.1), rgba(31, 26, 22, 0.06));
+  margin: 0;
 }
 
 .web-image img {
   width: 100%;
-  height: 100%;
+  height: 210px;
   object-fit: cover;
-  transition: transform 0.9s ease;
-}
-
-.web-card:hover .web-image img {
-  transform: scale(1.07);
+  display: block;
 }
 
 .web-tag {
   position: absolute;
-  top: 14px;
-  left: 14px;
-  background: rgba(31, 26, 22, 0.78);
-  color: rgba(250, 246, 239, 0.98);
-  font-size: 0.78rem;
+  top: 0.85rem;
+  left: 0.85rem;
+  background: rgba(46, 42, 114, 0.92);
+  color: #fff;
+  font-size: 0.8rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.35rem 0.75rem;
+  padding: 0.38rem 0.65rem;
   border-radius: 999px;
-  border: 1px solid rgba(250, 246, 239, 0.18);
-  box-shadow: 0 10px 18px rgba(31, 26, 22, 0.14);
-  backdrop-filter: blur(6px);
+  letter-spacing: 0.02em;
 }
 
 .web-content {
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.15rem 1.15rem 1.2rem;
 }
 
 .web-content h3 {
-  font-family: var(--font-display, "Caveat", cursive);
-  color: var(--ink, #1f1a16);
-  font-size: 1.75rem;
-  margin-bottom: 0.35rem;
+  margin: 0 0 0.45rem;
+  font-size: 1.42rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .web-content p {
-  font-size: 0.95rem;
-  line-height: 1.65;
-  color: rgba(31, 26, 22, 0.86);
-  margin-bottom: 0.75rem;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink-2);
 }
 
 .web-meta {
-  margin-top: 0.6rem;
-  font-size: 0.88rem;
-  color: rgba(31, 26, 22, 0.72);
-  line-height: 1.45;
+  margin-top: 0.8rem;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--ink-3);
+}
+
+.web-meta strong {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .web-actions {
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .btn-web {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  background: linear-gradient(135deg, var(--accent, #2e2a72), var(--accent-dark, #1f1b55));
+  border: 0;
+  background: var(--accent);
   color: #fff;
-  padding: 0.62rem 1.15rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-  box-shadow: 0 10px 22px rgba(46, 42, 114, 0.18);
-}
-
-button.btn-web {
-  appearance: none;
-  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .btn-web:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.02);
-  box-shadow: 0 14px 30px rgba(46, 42, 114, 0.24);
+  background: var(--accent-2);
+  transform: translateY(-1px);
 }
 
 .btn-web:focus-visible {
-  outline: var(--focus-ring, 3px solid rgba(46, 42, 114, 0.45));
-  outline-offset: 3px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ==========================================================
+   WORK PAGE HEADERS
+========================================================== */
+
+header.text-center h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+
+header.text-center .lead,
+section .text-muted {
+  color: var(--ink-2);
+}
+
+section h2.text-center {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 0.7rem;
+}
+
+section .text-muted {
+  font-size: 1.03rem;
+  line-height: 1.7;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==========================================================
@@ -360,9 +393,31 @@ button.btn-web {
   display: inline-block;
 }
 
+/* ==========================================================
+   MOBILE
+========================================================== */
+
 @media (max-width: 768px) {
   .web-grid {
     grid-template-columns: 1fr;
+  }
+
+  .web-image img {
+    height: 190px;
+  }
+
+  .web-content {
+    padding: 1.35rem 1.2rem 1.3rem;
+  }
+
+  .web-content h3 {
+  font-size: 1.48rem;
+  font-weight: 700;
+}
+
+  .web-content p,
+  .web-meta {
+    font-size: 0.95rem;
   }
 
   .project-modal {
