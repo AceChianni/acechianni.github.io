@@ -1,4 +1,4 @@
-# Ace Chianni's Portfolio
+# Ace LaCabe's Portfolio
 
 This began as a captone project to create a mock simple portfoliio in order to display my skills at level 1 of my full stack knowledge. I am now taking the time to utilize it as a true professional portfolio in order to help my transition into a more creative tech based role
 
