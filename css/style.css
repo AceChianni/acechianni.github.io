@@ -154,6 +154,12 @@ p {
   transform: translateY(0);
 }
 
+/* subtle background shifts */
+.homepage-strategy {
+  background: rgba(0,0,0,0.02);
+  padding: 2rem;
+  border-radius: 1rem;
+}
 /* ==========================================================
    NAVBAR (ink glass)
 ========================================================== */
@@ -297,6 +303,18 @@ p {
     margin-top: 24px;
   }
 }
+
+/* value grid */
+.value-grid h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.value-grid p {
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
 /* ==========================================================
    BUTTONS
 ========================================================== */
@@ -515,6 +533,10 @@ p {
   font-weight: 700;
 }
 
+.featured-highlight {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 /* ==========================================================
    HOW I DESIGN (Homepage callout)
 ========================================================== */
