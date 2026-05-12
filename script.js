@@ -122,59 +122,152 @@ document.addEventListener("DOMContentLoaded", () => {
   const MIN_SLIDES_PER_PROJECT = 5;
 
   const projects = {
+// flowstate: {
+//   title: "Flowstate: Calm Planning Workspace for Creatives",
+//   meta:
+//     "Role: UX/UI Design, Interaction Design, Front-End Development · Tools: Figma · React · Tailwind CSS · Firebase",
+
+//   overview:
+//     "Flowstate is a calm planning workspace designed for creatives, freelancers, and small teams. It reduces overwhelm by consolidating projects, schedules, and assets into a low-stimulation, easy-to-navigate interface. The product focuses on improving clarity, reducing context switching, and supporting predictable workflows.",
+
+//   slides: [
+//     {
+//       src: "images/flowstate/landing.jpg",
+//       heading: "Landing",
+//       caption:
+//         "Clear hero section with concise value proposition and gentle visuals that communicate calm workspace benefits without overwhelming the user.",
+//     },
+//     {
+//       src: "images/flowstate/dashboard.jpg",
+//       heading: "Dashboard",
+//       caption:
+//         "Simplified dashboard prioritizes ongoing projects, upcoming deadlines, and one clear next action to reduce cognitive load and improve task initiation.",
+//     },
+//     {
+//       src: "images/flowstate/project-view.jpg",
+//       heading: "Project View",
+//       caption:
+//         "Organized project workspace shows relevant tasks, notes, and assets in a low-density layout, supporting focused work and minimizing context switching.",
+//     },
+//     {
+//       src: "images/flowstate/calendar.jpg",
+//       heading: "Calendar",
+//       caption:
+//         "Visual calendar provides a calm overview of tasks and deadlines, allowing users to plan with clarity and avoid overstimulation.",
+//     },
+//     {
+//       src: "images/flowstate/task-detail.jpg",
+//       heading: "Task Detail",
+//       caption:
+//         "Focused task screens present only essential information and a single primary action, improving completion rates and reducing decision fatigue.",
+//     },
+//   ],
+
+//   caseStudy: {
+//     product:
+//       "Product Type: Planning & productivity workspace · Platform: Web (React) · Focus: Reducing overwhelm and supporting low-stimulation project management for creatives",
+
+//     why:
+//       "Many creatives and small teams struggle with fragmented workflows, scattered task management, and visually dense project tools. Flowstate was designed to reduce cognitive load, simplify navigation, and support predictable, calm workflows.",
+
+//     problem:
+//       "Traditional project management and planning tools present too much information at once, leading to overwhelm, context switching, and incomplete tasks. Users need a workspace that guides attention and reduces unnecessary choices.",
+
+//     insight:
+//       "Users perform best when the workspace emphasizes clarity, prioritizes a single next action, and reduces competing visual elements. A calm, low-density interface supports focus, productivity, and sustained engagement.",
+
+//     goals: [
+//       "Reduce cognitive overload across project and task management flows",
+//       "Support clear task initiation and completion",
+//       "Provide a calm, predictable, and low-stimulation interface",
+//       "Enable flexible planning while maintaining focus",
+//     ],
+
+//     principles: [
+//       "One primary action per screen",
+//       "Low-density, readable layouts",
+//       "Predictable navigation and workflow patterns",
+//       "Flexible engagement with tasks and projects",
+//       "Support clarity without visual or cognitive clutter",
+//     ],
+
+//     decisions: [
+//       "Designed a dashboard highlighting key projects and next actions to reduce decision fatigue",
+//       "Organized project views and assets to minimize context switching and improve task completion",
+//       "Implemented a low-density visual hierarchy to maintain calm and focus",
+//       "Developed focused task screens with a single primary action for each step",
+//       "Added a visual calendar and progress overview to support predictable workflows",
+//     ],
+
+//     highlight:
+//       "Flowstate’s design consolidates scattered projects and tasks into a low-stimulation workspace that promotes focus, clarity, and calm productivity without adding pressure.",
+
+//     scenario:
+//       "A solo creative or small team member can open Flowstate, see their key projects and next action, and start working immediately without feeling overwhelmed by excessive options or clutter.",
+
+//     impact:
+//       "By reducing visual and cognitive overload, Flowstate improves task initiation, supports consistent progress, and enables users to engage with projects in a calm, focused way. The predictable layout and single-action screens reduce context switching and decision fatigue.",
+
+//     reflection:
+//       "Future iterations will include deeper customization options, adaptive task prioritization, and enhanced collaboration features to further support flexible workflows and low-stimulation productivity for small teams and creative users.",
+//   },
+// },
+
+
+    
     inkspression: {
   title: "Inkspression",
   meta:
     "Role: End-to-end Product Design (Research, UX, UI, Front-End Development) · Tools: React · Tailwind CSS · Firebase",
 
   overview:
-    "Inkspression is a journaling and productivity web app designed to reduce cognitive overload by simplifying how users start, navigate, and return to reflection. The product focuses on reducing friction in multi-step user flows through mood-based entry, low-density layouts, and flexible interaction patterns.",
+    "Inkspression is a journaling and productivity web app designed to reduce cognitive overload by simplifying how users start, navigate, and return to reflection. The product focuses on reducing friction in multi-step user flows through mood-based entry, low-density layouts, and flexible interaction patterns. This approach improves engagement by lowering the barrier to task initiation and supporting repeat use without pressure.",
 
   slides: [
     {
       src: "images/inkspression/landing.jpg",
       heading: "Landing",
       caption:
-        "Designed a low-friction entry flow that allows users to begin journaling without account creation, reducing onboarding friction and improving task initiation.",
+        "Low-friction entry flow lets users begin journaling immediately—no account creation required—reducing onboarding friction and improving task initiation.",
     },
     {
       src: "images/inkspression/dash.jpg",
       heading: "Dashboard",
       caption:
-        "A simplified dashboard that prioritizes emotional state, recent activity, and one clear next action to reduce decision fatigue.",
+        "Simplified dashboard prioritizes emotional state, recent activity, and one clear next action to reduce decision fatigue and support sustained engagement.",
     },
     {
       src: "images/inkspression/signin.jpg",
       heading: "Account",
       caption:
-        "A minimal authentication flow designed to feel optional, allowing users to engage before committing to an account.",
+        "Minimal authentication flow feels optional, allowing users to engage before committing to an account and lowering initial friction.",
     },
     {
       src: "images/inkspression/entry.jpg",
       heading: "Journal Entry",
       caption:
-        "A distraction-free writing environment with mood-led prompts and reduced visual noise to support focus and ease of expression.",
+        "Distraction-free writing environment with mood-led prompts and reduced visual noise to support focus, ease of expression, and flexible session lengths.",
     },
   ],
 
   caseStudy: {
     product:
-      "Product Type: Journaling & productivity web app · Platform: React (web) · Focus: Reducing friction in user flows",
+      "Product Type: Journaling & productivity web app · Platform: React (web) · Focus: Reducing friction in user flows and supporting consistent engagement",
 
     why:
-      "Many users want to journal or reflect but struggle to start or stay consistent due to overwhelm, pressure, or rigid productivity systems. This project explores how reducing friction at the moment of entry can improve engagement and return behavior.",
+      "Many users want to journal or reflect but struggle to start or stay consistent due to overwhelm, pressure, or rigid productivity systems. By reducing friction at the moment of entry, this project improves task initiation and encourages repeat use without relying on performance-based mechanics.",
 
     problem:
-      "Traditional journaling and productivity tools rely on dense dashboards, streaks, and performance-based systems. For users with fluctuating energy or attention, these patterns increase pressure and lead to drop-off rather than sustained use.",
+      "Traditional journaling and productivity tools rely on dense dashboards, streaks, and performance metrics. For users with fluctuating energy or attention, these patterns increase cognitive load, create pressure, and lead to drop-off rather than sustained engagement.",
 
     insight:
-      "Users are more likely to engage when the barrier to entry is low and the experience adapts to their current mental or emotional state. Reducing early decision points improves task initiation.",
+      "Users engage more when barriers to entry are low and the experience adapts to their current mental or emotional state. Reducing early decision points supports task initiation and encourages repeat engagement.",
 
     goals: [
       "Improve task initiation by reducing friction at entry",
       "Reduce cognitive load across core flows",
-      "Support flexible engagement based on user energy",
-      "Create a calm, accessible interaction system",
+      "Support flexible engagement aligned with user energy",
+      "Create a calm, accessible, and forgiving interaction system",
     ],
 
     principles: [
@@ -182,19 +275,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "Reduce friction at the moment of starting",
       "No pressure-based mechanics (no streaks, no shame loops)",
       "Design for fluctuating attention and energy",
-      "Keep interactions simple and forgiving",
+      "Keep interactions simple, forgiving, and low-stimulation",
     ],
 
     decisions: [
-      "Designed a mood-first entry flow to reduce friction at the start of journaling",
-      "Removed streaks and performance metrics to eliminate pressure-based disengagement",
-      "Structured screens around a single primary action to reduce decision fatigue",
-      "Implemented low-density UI patterns to improve readability and focus",
-      "Created flexible journaling paths based on user energy levels",
+      "Mood-first entry flow to reduce early decision fatigue and encourage immediate journaling",
+      "Removed streaks and performance metrics to eliminate pressure and disengagement",
+      "Structured screens around a single primary action to reduce cognitive load",
+      "Low-density UI patterns to improve readability, focus, and emotional calm",
+      "Flexible journaling paths allowing users to engage for short or long sessions based on energy levels",
     ],
 
     impact:
-      "The product reduces friction at the moment of entry and improves task initiation by simplifying early user decisions. By aligning interaction patterns with real-world energy levels, the experience supports repeat use without relying on pressure or habit enforcement.",
+      "By simplifying early decisions and aligning with user energy levels, Inkspression reduces onboarding friction, improves task initiation, and supports consistent engagement without relying on habit enforcement or pressure-based mechanics.",
 
     reflection:
       "Next steps include usability testing to validate entry flow effectiveness, optimizing time-to-first-entry, and exploring adaptive UI patterns that respond dynamically to user input and emotional state.",
@@ -207,57 +300,57 @@ document.addEventListener("DOMContentLoaded", () => {
     "Role: UX/UI Design, Information Architecture, Interaction Design · Tools: Figma · React · Tailwind CSS",
 
   overview:
-    "Kids Hub is a routine and emotional regulation tool designed to support children and caregivers during high-stress moments. The product focuses on reducing friction in transitions through guided flows, mood-based interaction, and low-stimulation design patterns.",
+    "Kids Hub is a routine and emotional regulation tool designed to support neurodivergent children and caregivers during high-stress moments. The product focuses on reducing friction in transitions through guided flows, mood-based interaction, and low-stimulation design patterns, improving task completion and engagement.",
 
   slides: [
     {
       src: "images/kidshub/home.jpg",
       heading: "Home",
       caption:
-        "A simplified home screen that guides users to one clear next step, reducing decision fatigue during transitions.",
+        "Simplified home screen directs users to one clear next step, reducing decision fatigue and minimizing frustration during transitions.",
     },
     {
       src: "images/kidshub/home-calm.jpg",
       heading: "Low Stimulation Mode",
       caption:
-        "An alternate interface that reduces visual intensity, supporting users sensitive to motion, contrast, or dense layouts.",
+        "Alternate interface reduces visual intensity to support children sensitive to motion, contrast, or dense layouts, improving focus and emotional comfort.",
     },
     {
       src: "images/kidshub/morning.jpg",
       heading: "Morning Routine",
       caption:
-        "A structured routine flow that breaks tasks into manageable steps, improving clarity and reducing resistance.",
+        "Structured routine flow breaks tasks into manageable steps, increasing clarity, reducing resistance, and improving completion rates.",
     },
     {
       src: "images/kidshub/calmcorner.jpg",
       heading: "Calm Corner",
       caption:
-        "A guided emotional regulation flow that helps users identify their state, reset, and re-engage without pressure.",
+        "Guided emotional regulation flow helps users identify their state, reset, and re-engage without pressure, preventing escalation during transitions.",
     },
     {
       src: "images/kidshub/reward.jpg",
       heading: "Rewards",
       caption:
-        "A reinforcement system designed to encourage effort without introducing pressure, streaks, or performance tracking.",
+        "Reinforcement system encourages effort without pressure, streaks, or performance tracking, supporting intrinsic motivation and sustained engagement.",
     },
   ],
 
   caseStudy: {
     product:
-      "Product Type: Routine & emotional regulation tool · Users: Children + caregivers · Focus: Reducing friction in transitions",
+      "Product Type: Routine & emotional regulation tool · Users: Neurodivergent children and caregivers · Focus: Reducing friction in transitions and supporting emotional regulation",
 
     why:
-      "Transitions, emotional regulation, and daily routines are often high-friction moments for neurodivergent children and their caregivers. This project explores how design can reduce escalation and support smoother task completion.",
+      "Daily routines and transitions often trigger high-friction moments for neurodivergent children and their caregivers. By designing to support emotional regulation and reduce cognitive load, Kids Hub improves engagement, task completion, and caregiver confidence.",
 
     problem:
-      "Many tools rely on rigid routines or overstimulating interfaces, which increase resistance and emotional escalation rather than supporting completion.",
+      "Existing tools rely on rigid routines or overstimulating interfaces, increasing resistance, emotional escalation, and incomplete tasks rather than supporting success.",
 
     insight:
-      "A child’s emotional state directly impacts their ability to complete tasks. Supporting regulation before task execution improves engagement and reduces friction.",
+      "A child’s emotional state directly impacts their ability to complete tasks. Addressing regulation before and during task engagement reduces friction, prevents escalation, and supports consistent progress.",
 
     goals: [
       "Reduce resistance during transitions",
-      "Support emotional regulation in real time",
+      "Support real-time emotional regulation",
       "Simplify task flows for children and caregivers",
       "Create predictable, low-stimulation interaction patterns",
     ],
@@ -271,24 +364,24 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     decisions: [
-      "Introduced mood-first navigation to meet users before task engagement",
-      "Designed guided step-by-step flows to reduce cognitive load",
-      "Implemented low-density layouts to minimize sensory overwhelm",
-      "Allowed flexible interaction (reset, deselect, no forced completion)",
-      "Integrated caregiver support tools for co-regulation",
+      "Introduced mood-first navigation to engage users before task execution",
+      "Guided step-by-step flows to reduce cognitive load and improve completion rates",
+      "Low-density layouts to minimize sensory overwhelm",
+      "Flexible interaction options (reset, deselect) to allow recovery without frustration",
+      "Integrated caregiver support tools for co-regulation and guidance",
     ],
 
     highlight:
-      "The Calm Corner feature introduces a mood-first interaction model that helps users regulate before continuing tasks, reducing resistance and improving re-engagement.",
+      "The Calm Corner feature provides a mood-first interaction model, allowing users to regulate before continuing tasks. This reduces resistance and improves re-engagement without introducing pressure.",
 
     scenario:
-      "During a transition, a child can identify their emotional state, select a reset action, and return to their routine with less escalation, while caregivers are supported with structured guidance.",
+      "During a transition, a child identifies their emotional state, selects a reset action if needed, and resumes their routine with less escalation, while caregivers receive structured guidance to maintain calm interactions.",
 
     impact:
-      "By prioritizing emotional state and simplifying transitions, the product reduces resistance and supports smoother task completion. It enables more independent re-engagement while supporting caregivers in maintaining calm interactions.",
+      "By prioritizing emotional state and simplifying transitions, Kids Hub reduces resistance, supports smoother task completion, and enables independent re-engagement. Caregivers benefit from structured guidance, improving the overall experience for both parties.",
 
     reflection:
-      "Future iterations will include connected caregiver accounts, progress tracking, and integrations with care providers to support a more collaborative system.",
+      "Future iterations include connected caregiver accounts, progress tracking, and integrations with care providers to support collaborative and adaptive routines.",
   },
 },
     inkspresso: {
