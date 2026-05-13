@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // script.js
   "use strict";
 
   const injectHTML = async (placeholderEl, filePath) => {
@@ -122,6 +123,91 @@ document.addEventListener("DOMContentLoaded", () => {
   const MIN_SLIDES_PER_PROJECT = 5;
 
   const projects = {
+    flowstate: {
+  title: "Flowstate",
+  meta:
+    "Role: UX/UI, Product Design, Front-End Development · Tools: React · Tailwind CSS",
+
+  overview:
+    "Flowstate is a calm productivity workspace designed to simplify how users manage projects, tasks, and schedules. The product focuses on reducing interface complexity and creating structured, predictable workflows that support consistent use.",
+
+  slides: [
+    {
+      src: "images/flowstate/landing.jpg",
+      heading: "Landing Experience",
+      caption:
+        "A calm, structured landing page that communicates product value clearly without overwhelming users.",
+    },
+    {
+      src: "images/flowstate/signup.jpg",
+      heading: "Account Creation",
+      caption:
+        "A simplified onboarding flow designed to reduce friction and support quick account setup.",
+    },
+    {
+      src: "images/flowstate/dashboard.jpg",
+      heading: "Dashboard Overview",
+      caption:
+        "A structured dashboard that surfaces key information—projects, tasks, and progress—at a glance.",
+    },
+    {
+      src: "images/flowstate/sidebar.jpg",
+      heading: "Navigation System",
+      caption:
+        "A consistent sidebar layout that ensures predictable access to core features across the product.",
+    },
+    {
+      src: "images/flowstate/tasks.jpg",
+      heading: "Task Management",
+      caption:
+        "Tasks are organized into clear, scannable sections to support quick action and reduce decision fatigue.",
+    },
+  ],
+
+  caseStudy: {
+    product:
+      "Product Type: Productivity SaaS · Platform: Web (React) · Focus: Simplifying task and project management",
+
+    why:
+      "Many productivity tools overwhelm users with dense interfaces and too many decisions. This project explores how reducing complexity and increasing structure can improve usability and consistency.",
+
+    problem:
+      "Users often struggle to stay consistent with productivity tools due to cluttered dashboards, unclear hierarchy, and too many competing actions.",
+
+    insight:
+      "Reducing visible choices and structuring workflows clearly improves task initiation and follow-through.",
+
+    goals: [
+      "Reduce cognitive load in productivity workflows",
+      "Improve task clarity and navigation",
+      "Create a structured, predictable interface",
+      "Support consistent, low-friction usage",
+    ],
+
+    principles: [
+      "Clarity over flexibility",
+      "One primary focus per section",
+      "Predictable navigation patterns",
+      "Reduce unnecessary UI density",
+    ],
+
+    decisions: [
+      "Designed a structured dashboard to surface only essential information",
+      "Reduced interface density to minimize overwhelm",
+      "Implemented a consistent sidebar navigation system",
+      "Separated projects, tasks, and schedules into clear layers",
+      "Used a calm visual system with subtle contrast to improve readability",
+    ],
+
+    impact:
+      "The product improves usability by simplifying decision-making and reducing interface friction, making it easier for users to stay engaged and complete tasks.",
+
+    reflection:
+      "Next steps include expanding collaboration features, refining task workflows, and testing how users interact with multi-project environments.",
+  },
+},
+
+
     inkspression: {
   title: "Inkspression",
   meta:
